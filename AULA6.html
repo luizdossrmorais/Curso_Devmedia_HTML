@@ -53,7 +53,7 @@
         <hr>
         <h2>Organizando o Formulario:</h2><br>
 
-        ** <h3>Elementos.</h3>
+        <h3>Elementos.</h3>
         ****<b>fieldset:</b> Organiza uma seção no formulario (ex: sessão conta, que tem email e senha.)<br>
         ****<b>legend:</b> Colocamos o titulo da seção.
 
@@ -72,26 +72,34 @@
         </div>
         </fieldset>
 
+        <fieldset>
+            <legend>Dados Pessoais: </legend>
+            <div>
+                <label>Nome: </label>
+                <input type="text" placeholder="Ex: Luiz"/>
+            </div>
+            <div>
+                <label>Tel: </label>
+                <input type="text" placeholder="Ex: (XX) 9XXXX-XXXX"/>
+            </div>
+            <div>
+                <label>Sexo: </label>
+                <input type="radio" value="masculino" name="sexo" checked/>
+                <label>Masculino</label>
+                <input type="radio" value="feminino" name="sexo"/>
+                <label>Feminino</label>
+            </div>
+            <div>
+                <label>Data: </label>
+                <input type="date"/>
+            </div>
+            <div>
+                <label>Foto de perfil: </label>
+                <input type="file" accept="image/*"/>
+            </div>
+        </fieldset>
 
-        <div>
-            <label>Nome: </label>
-            <input type="text" placeholder="Ex: Luiz"/>
-        </div>
-        <div>
-            <label>Tel: </label>
-            <input type="text" placeholder="Ex: (XX) 9XXXX-XXXX"/>
-        </div>
-        <div>
-            <label>Sexo: </label>
-            <input type="radio" value="masculino" name="sexo" checked/>
-            <label>Masculino</label>
-            <input type="radio" value="feminino" name="sexo"/>
-            <label>Feminino</label>
-        </div>
-        <div>
-            <label>Data: </label>
-            <input type="date"/>
-        </div>
+        
         <div>
             <label>Rua: </label>
             <input type="text"/>
@@ -123,10 +131,7 @@
             <input type="checkbox" checked/>
             <label>Deseja receber nossos e-mails?</label>
         </div>
-        <div>
-            <label>Foto de perfil: </label>
-            <input type="file" accept="image/*"/>
-        </div>
+        
 
 
     </form>
