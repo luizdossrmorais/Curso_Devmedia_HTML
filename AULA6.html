@@ -41,7 +41,7 @@
         ****Tipo checkbox:<br>
         [checked: Atributo que seleciona 1 campo do tipo checkbox, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sim ou não)]<br>
         ****Tipo file:<br>
-        [accept: esse atributo permite definir o tipo de arquivo que pode ser upado para o formulario.]
+        [accept: esse atributo permite definir o tipo de arquivo que pode ser upado para o formulario.]<br>
         <b>**No Elemento <i>select</i>:</b><br>
 
         <b>**No Elemento <i>option</i>:</b> <br>
@@ -49,8 +49,19 @@
 
         <b>**No Elemento <i>textarea</i>:</b><br>
         [maxlength: define e limita a quantidade maxima de caracteres.]
+        <br><br>
+        <hr>
+        <h2>Organizando o Formulario:</h2><br>
+
+        ** <h3>Elementos.</h3>
+        ****<b>fieldset:</b> Organiza uma seção no formulario (ex: sessão conta, que tem email e senha.)<br>
+        ****<b>legend:</b> Colocamos o titulo da seção.
+
         <br><br><hr><br>
         <h2>Formulario:</h2>
+
+        <fieldset>
+            <legend>Conta:</legend>
         <div>
         <label>Email: </label>
         <input type="email"/>
@@ -59,6 +70,9 @@
         <label>Senha: </label>
         <input type="password"/>
         </div>
+        </fieldset>
+
+
         <div>
             <label>Nome: </label>
             <input type="text" placeholder="Ex: Luiz"/>
