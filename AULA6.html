@@ -26,9 +26,8 @@
         [type: podemos informar varios tipor de dados, aqui que modificamos a forma do <i>input</i> a nossa preferencia.]<br>
         [placeholder: podemos digitar um texto para aparecer no campo ainda vazio de input, assim mostrando ao usuario que tipo de dado, e como se deve preencher aquele campo, quando o usuario lica no campo, esse texto some.]<br>
         [min/max: define o valor minimo e valor maximo em um campo do tipo numero (type="number").]<br>
-        **No Elemento <i>select</i>:<br>
-        [value: Adicionamos um valor para o usuario selecionar no input do tipo select (type="radio").]<br>
-        [name: Em um campo do typo select (type="radio"), o name agrupa valores, e faz o controle para que um valor apenas seja selecionado. (ex: sexo)]<br>
+        [value: Adicionamos um valor para o usuario selecionar no input do tipo radio (type="radio").]<br>
+        [name: Em um campo do typo radio (type="radio"), o name agrupa valores, e faz o controle para que um valor apenas seja selecionado. (ex: sexo)]<br>
         [checked: Atributo que seleciona 1 campo do tipo radio, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sexo)]
         <br><br><hr><br>
         <h2>Formulario:</h2>
@@ -50,7 +49,7 @@
         </div>
         <div>
             <label>Sexo: </label>
-            <input type="radio" value="masculino" name="sexo"/>
+            <input type="radio" value="masculino" name="sexo" checked/>
             <label>Masculino</label>
             <input type="radio" value="feminino" name="sexo"/>
             <label>Feminino</label>
