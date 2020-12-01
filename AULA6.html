@@ -41,6 +41,9 @@
 
         **No Elemento <i>option</i>: <br>
         [value: Adicionamos um valor para o usuario selecionar no <i>option</i>.]<br>
+
+        **No Elemento <i>textarea</i>:<br>
+        [maxlength: define e limita a quantidade maxima de caracteres.]
         <br><br><hr><br>
         <h2>Formulario:</h2>
         <div>
@@ -89,9 +92,13 @@
         <div>
             <label>Estado: </label>
             <select>
-                <option value="rio de janeiro">Rio de Janeiro</option>
-                <option value="sao paulo">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option> <!--no value usar somente a UF no caso de estado para ficar mais facil para enviar ao servidor-->
+                <option value="sp">São Paulo</option>
             </select>
+        </div>
+        <div>
+            <label>Descreva como nos conheceu: </label>
+            <textarea maxlength="256" placeholder="Digite aqui..."></textarea>
         </div>
         
 
