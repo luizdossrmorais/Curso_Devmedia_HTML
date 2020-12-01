@@ -99,30 +99,35 @@
             </div>
         </fieldset>
 
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label>Rua: </label>
+                <input type="text"/>
+            </div>
+            <div>
+                <label>Complemento: </label>
+                <input type="text"/>
+            </div>
+            <div>
+                <label>Numero: </label>
+                <input type="number" max="9999" min="1"/>
+            </div>
+            <div>
+            <label>Cidade: </label>
+            <input type="text"/>
+            </div>
+            <div>
+                <label>Estado: </label>
+                <select>
+                    <option value="rj">Rio de Janeiro</option> <!--no value usar somente a UF no caso de estado para ficar mais facil para enviar ao servidor-->
+                    <option value="sp">São Paulo</option>
+                </select>
+            </div>
+        </fieldset>
+
         
-        <div>
-            <label>Rua: </label>
-            <input type="text"/>
-        </div>
-        <div>
-            <label>Complemento: </label>
-            <input type="text"/>
-        </div>
-        <div>
-            <label>Numero: </label>
-            <input type="number" max="9999" min="1"/>
-        </div>
-        <div>
-        <label>Cidade: </label>
-        <input type="text"/>
-        </div>
-        <div>
-            <label>Estado: </label>
-            <select>
-                <option value="rj">Rio de Janeiro</option> <!--no value usar somente a UF no caso de estado para ficar mais facil para enviar ao servidor-->
-                <option value="sp">São Paulo</option>
-            </select>
-        </div>
+        
         <div>
             <label>Descreva como nos conheceu: </label>
             <textarea maxlength="256" placeholder="Digite aqui..."></textarea>
