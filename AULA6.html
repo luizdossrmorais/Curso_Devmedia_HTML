@@ -12,53 +12,61 @@
     - valor (value, dado invisivel) = esse dado é enviado, quando o formulario for enviado.<br>
     - nome(dado visivel na pagina) = é o dado que digitamos no formulario para o usuario afim de auxiliar sobre cada campo a ser preenchido.
 
+    <h2>Elementos/Controles de Formulario:</h2>
+    **<label>Titulo</label> 
+    = No elemento <i>label</i> escrevemos o titulo que vai referenciar ao input posterior.
+    <br><br>
+    **<input> 
+    = O elemento <i>input</i> 
+    como padrão é um campo do tipo texto (type="text"), porem ele pode se transformar no que quizermos (email, date, password, etc) se caracterizando assim como totalmente modelavel.
+    <br><br>
+    <hr>
+    <h2>Atributos de Formulario:</h2>
+
+    <b>** No Elemento <i>label</i>:</b> <br>
+    [for: recebe o valor no id do input.]<br>
+    <b>** No Elemento <i>input</i>:</b> <br>
+    ****Tipo texto:<br>
+    [type: podemos informar varios tipos de dados, aqui que modificamos a forma do <i>input</i> a nossa preferencia.]<br>
+    [placeholder: podemos digitar um texto para aparecer no campo ainda vazio de input, assim mostrando ao usuario que tipo de dado, e como se deve preencher aquele campo, quando o usuario lica no campo, esse texto some.]<br>
+    ****Tipo number:<br>
+    [min/max: define o valor minimo e valor maximo em um campo do tipo numero (type="number").]<br>
+    ****Tipo radio:<br>
+    [value: Adicionamos um valor para o usuario selecionar no input do tipo radio (type="radio").]<br>
+    [name: Em um campo do typo radio (type="radio"), o name agrupa valores, e faz o controle para que um valor apenas seja selecionado. (ex: sexo)]<br>
+    [checked: Atributo que seleciona 1 campo do tipo radio, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sexo)]<br>
+    ****Tipo checkbox:<br>
+    [checked: Atributo que seleciona 1 campo do tipo checkbox, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sim ou não)]<br>
+    ****Tipo file:<br>
+    [accept: esse atributo permite definir o tipo de arquivo que pode ser upado para o formulario.]<br>
+    ****Tipo submit:<br>
+    [value: adicionamos um valor]
+
+    <b>**No Elemento <i>select</i>:</b><br>
+
+    <b>**No Elemento <i>option</i>:</b> <br>
+    [value: Adicionamos um valor para o usuario selecionar no <i>option</i>.]<br>
+
+    <b>**No Elemento <i>textarea</i>:</b><br>
+    [maxlength: define e limita a quantidade maxima de caracteres.]
+    <br><br>
+    <hr>
+    <h2>Organizando o Formulario:</h2><br>
+
+    <h3>Elementos.</h3>
+    ****<b>fieldset:</b> Organiza uma seção no formulario (ex: sessão conta, que tem email e senha.)<br>
+    ****<b>legend:</b> Colocamos o titulo da seção.
+    <br><br>
+    <hr>
+    <h2>Enviando o Formulario:</h2><br>
+
 
     <br><br><hr><br>
-    <form method="" action="">
-        <h2>Elementos/Controles de Formulario:</h2>
-        **<label>Titulo</label> 
-        = No elemento <i>label</i> escrevemos o titulo que vai referenciar ao input posterior.
-        <br><br>
-        **<input> 
-        = O elemento <i>input</i> 
-        como padrão é um campo do tipo texto (type="text"), porem ele pode se transformar no que quizermos (email, date, password, etc) se caracterizando assim como totalmente modelavel.
-        <br><br>
-        <hr>
-        <h2>Atributos de Formulario:</h2>
-
-        <b>** No Elemento <i>label</i>:</b> <br>
-        [for: recebe o valor no id do input.]<br>
-        <b>** No Elemento <i>input</i>:</b> <br>
-        ****Tipo texto:<br>
-        [type: podemos informar varios tipos de dados, aqui que modificamos a forma do <i>input</i> a nossa preferencia.]<br>
-        [placeholder: podemos digitar um texto para aparecer no campo ainda vazio de input, assim mostrando ao usuario que tipo de dado, e como se deve preencher aquele campo, quando o usuario lica no campo, esse texto some.]<br>
-        ****Tipo number:<br>
-        [min/max: define o valor minimo e valor maximo em um campo do tipo numero (type="number").]<br>
-        ****Tipo radio:<br>
-        [value: Adicionamos um valor para o usuario selecionar no input do tipo radio (type="radio").]<br>
-        [name: Em um campo do typo radio (type="radio"), o name agrupa valores, e faz o controle para que um valor apenas seja selecionado. (ex: sexo)]<br>
-        [checked: Atributo que seleciona 1 campo do tipo radio, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sexo)]<br>
-        ****Tipo checkbox:<br>
-        [checked: Atributo que seleciona 1 campo do tipo checkbox, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sim ou não)]<br>
-        ****Tipo file:<br>
-        [accept: esse atributo permite definir o tipo de arquivo que pode ser upado para o formulario.]<br>
-        <b>**No Elemento <i>select</i>:</b><br>
-
-        <b>**No Elemento <i>option</i>:</b> <br>
-        [value: Adicionamos um valor para o usuario selecionar no <i>option</i>.]<br>
-
-        <b>**No Elemento <i>textarea</i>:</b><br>
-        [maxlength: define e limita a quantidade maxima de caracteres.]
-        <br><br>
-        <hr>
-        <h2>Organizando o Formulario:</h2><br>
-
-        <h3>Elementos.</h3>
-        ****<b>fieldset:</b> Organiza uma seção no formulario (ex: sessão conta, que tem email e senha.)<br>
-        ****<b>legend:</b> Colocamos o titulo da seção.
-
-        <br><br><hr><br>
-        <h2>Formulario:</h2>
+    <h2>Formulario:</h2>
+    <br><br><hr><br>
+    
+    <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+       
 
         <fieldset>
             <legend>Conta:</legend>
@@ -137,7 +145,9 @@
                 <label>Deseja receber nossos e-mails?</label>
             </div>
         </fieldset>
-                
+        <input type="submit" value="enviar"/> - Botão tipo 1 (input type="submit" value="enviar") <!--Para ter texto no botão enviar precisa ter o atributo value-->
+        <br>
+        <button type="submit">Enviar</button> - Botão tipo 2 (button type="submit">enviar)
     </form>
     <br>
         <br>
