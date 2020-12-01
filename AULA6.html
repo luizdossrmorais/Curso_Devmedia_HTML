@@ -7,8 +7,13 @@
 </head>
 <body>
     <h1>AULA6 - FORMULARIO.</h1>
-    <hr>
-    
+    <hr><br>
+    <h2>Palavras chave:</h2><br>
+    - valor (value, dado invisivel) = esse dado é enviado, quando o formulario for enviado.<br>
+    - nome(dado visivel na pagina) = é o dado que digitamos no formulario para o usuario afim de auxiliar sobre cada campo a ser preenchido.
+
+
+    <br><br><hr><br>
     <form method="" action="">
         <h2>Elementos/Controles de Formulario:</h2>
         **<label>Titulo</label> 
@@ -23,12 +28,19 @@
         ** No Elemento <i>label</i>: <br>
         [for: recebe o valor no id do input.]<br>
         ** No Elemento <i>input</i>: <br>
-        [type: podemos informar varios tipor de dados, aqui que modificamos a forma do <i>input</i> a nossa preferencia.]<br>
+        ****<b>Tipo texto:</b><br>
+        [type: podemos informar varios tipos de dados, aqui que modificamos a forma do <i>input</i> a nossa preferencia.]<br>
         [placeholder: podemos digitar um texto para aparecer no campo ainda vazio de input, assim mostrando ao usuario que tipo de dado, e como se deve preencher aquele campo, quando o usuario lica no campo, esse texto some.]<br>
+        ****<b>Tipo number:</b><br>
         [min/max: define o valor minimo e valor maximo em um campo do tipo numero (type="number").]<br>
+        ****<b>Tipo radio:</b><br>
         [value: Adicionamos um valor para o usuario selecionar no input do tipo radio (type="radio").]<br>
         [name: Em um campo do typo radio (type="radio"), o name agrupa valores, e faz o controle para que um valor apenas seja selecionado. (ex: sexo)]<br>
-        [checked: Atributo que seleciona 1 campo do tipo radio, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sexo)]
+        [checked: Atributo que seleciona 1 campo do tipo radio, mesmo contendo 2, por isso é preciso colocar esse atributo em apenas um campo. (ex: sexo)]<br>
+        **No Elemento <i>select</i>:<br>
+
+        **No Elemento <i>option</i>: <br>
+
         <br><br><hr><br>
         <h2>Formulario:</h2>
         <div>
@@ -69,6 +81,16 @@
         <div>
             <label>Numero: </label>
             <input type="number" max="9999" min="1"/>
+        </div>
+        <div>
+        <label>Cidade: </label>
+        <input type="text"/>
+        </div>
+        <div>
+            <label>Estado: </label>
+            <select>
+
+            </select>
         </div>
         
 
