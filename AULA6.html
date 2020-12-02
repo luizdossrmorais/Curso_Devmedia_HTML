@@ -17,12 +17,18 @@
 
     <h2>Elementos/Controles de Formulario:</h2>
 
-    **<label>Titulo</label> 
+    **label 
     = No elemento <i>label</i> escrevemos o titulo que vai referenciar ao input posterior.
     <br><br>
-    **<input> 
+    **input
     = O elemento <i>input</i> 
     como padrão é um campo do tipo texto (type="text"), porem ele pode se transformar no que quizermos (email, date, password, etc) se caracterizando assim como totalmente modelavel.
+    <br><br>
+    = O elemento <i>form:</i> usado para criar formularios, nele temos os atributos, method e action:<br>
+    ****method. Esse atributo cuida do metodo (GET ou POST), que é a forma que esse formulario vai ser enviado.<br>
+    ********GET. nesse metodo, os dados aparecem na barra de endereço(pesquiza).<br>
+    ********POST. nesse metodo os dados são enviados secretamente (login).<br>
+    ****action. esse atributo é usado para colocar o link do destino para onde os dados do formulario serão enviados.
     <br><br>
     <hr>
 
@@ -67,7 +73,7 @@
     <hr>
     <h2>Enviando o Formulario:</h2><br>
 
-    - 1. Adicione o link para o servidor receber o formulario direto no atributo action.
+    - 1. Adicione o link para o servidor receber o formulario direto no atributo action.<br>
     - 2. Confira se todos os campos input, select, textarea  estão identificados com name="".
     <br><br>
     <hr>
@@ -85,7 +91,8 @@
     ** minlength/maxlength,min/max: define um valor minimo e maximo de caracteres limite.<br>
     ** checked: deixa um campo pre-preenchido pelo desenvolvedor.<br>
     ** type: ele diz ao HTML5 qual formato o input vai ter, e estabelece o tipo de dado naquele campo.<br>
-    ** pattern: Obriga o usuario digitar igual ao modelo no placeholder.(ex: pattern="\([0-9]\)[\s][0-9]-[0-9]" maxlength="15")
+    ** pattern: Obriga o usuario digitar igual ao modelo no placeholder.(ex: pattern="\([0-9]\)[\s][0-9]-[0-9]" maxlength="15")<br>
+
     <br><br><hr><br>
     <h2>Formulario:</h2>
     <br>
