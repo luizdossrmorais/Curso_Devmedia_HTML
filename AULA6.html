@@ -67,7 +67,25 @@
     <hr>
     <h2>Enviando o Formulario:</h2><br>
 
+    - 1. Adicione o link para o servidor receber o formulario direto no atributo action.
+    - 2. Confira se todos os campos input, select, textarea  estão identificados com name="".
+    <br><br>
+    <hr>
+    <h2>Validando o Formulario:</h2><br>
 
+    - No HTML5 a grande novidade é poder validar os dados direto no formulario.
+    - O formulario é a porta de entrada para o servidor,ou seja, o formulario é fundamental no processo de interação do usuario com a aplicação(ex: twiter, facebook, instagram etc).
+    - A permissão da interação do usuario com a aplicação diretamente, acaba acarretando algumas preucupações quando se trata de dar permissão para que qualquer tipo de dado seja liberado/livre no formulario(não considerando dados de palavrão, etc, mas preenchimentos forçados que podem gerar erros na aplicação, ou acarretar sobrecarga nas requisições).
+    - Validar é RECEBER no BACKEND as INFORMAÇÕES mais CORRETAS!
+    - O HTML5, nos da essa opção de validar/controlar certas requisições digitadas pelo usuario.<br>
+    
+    <H3>Atributos:</H3><br>
+
+    ** required: Obriga o usuario a preencher um campo (esse atributo é isolado(não necessita passar valores)).No caso do input ser do tipo radio(type="radio"), não é recomendado obrigar uma opção ou duas, ja que o atributo radio permite ao usuario a opção de escolha.
+    ** minlength/maxlength,min/max: define um valor minimo e maximo de caracteres limite.
+    ** checked: deixa um campo pre-preenchido pelo desenvolvedor.
+    ** type: ele diz ao HTML5 qual formato o input vai ter, e estabelece o tipo de dado naquele campo.
+    ** pattern: Obriga o usuario digitar igual ao modelo no placeholder.(ex: pattern="\([0-9]\)[\s][0-9]-[0-9]" maxlength="15")
     <br><br><hr><br>
     <h2>Formulario:</h2>
     <br>
@@ -95,7 +113,7 @@
             </div>
             <div>
                 <label>Cel: </label>
-                <input type="text" placeholder="Ex: (XX) 9XXXX-XXXX" name="cel"/>
+                <input type="text" placeholder="Ex: (XX) 9XXXX-XXXX" name="cel" pattern="\([0-9]\)[\s][0-9]-[0-9]" maxlength="15"/>
             </div>
             <div>
                 <label>Sexo: </label>
