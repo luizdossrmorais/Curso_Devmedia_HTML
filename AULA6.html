@@ -8,12 +8,15 @@
 <body>
     <h1>AULA6 - FORMULARIO.</h1>
     <hr><br>
+
     <h2>Palavras chave:</h2><br>
+
     - valor (value, dado invisivel) = esse dado é enviado, quando o formulario for enviado.<br>
     - nome(dado visivel na pagina) = é o dado que digitamos no formulario para o usuario afim de auxiliar sobre cada campo a ser preenchido. <br>
     -name = cada campo tem que ter um name, para a requisicao ao servidor capturar e retornar corretamente.
 
     <h2>Elementos/Controles de Formulario:</h2>
+
     **<label>Titulo</label> 
     = No elemento <i>label</i> escrevemos o titulo que vai referenciar ao input posterior.
     <br><br>
@@ -22,10 +25,12 @@
     como padrão é um campo do tipo texto (type="text"), porem ele pode se transformar no que quizermos (email, date, password, etc) se caracterizando assim como totalmente modelavel.
     <br><br>
     <hr>
+
     <h2>Atributos de Formulario:</h2>
 
     <b>** No Elemento <i>label</i>:</b> <br>
     [for: recebe o valor no id do input.]<br>
+
     <b>** No Elemento <i>input</i>:</b> <br>
     ****Tipo texto:<br>
     [type: podemos informar varios tipos de dados, aqui que modificamos a forma do <i>input</i> a nossa preferencia.]<br>
@@ -52,6 +57,7 @@
     [maxlength: define e limita a quantidade maxima de caracteres.]
     <br><br>
     <hr>
+
     <h2>Organizando o Formulario:</h2><br>
 
     <h3>Elementos.</h3>
@@ -73,11 +79,11 @@
             <legend>Conta:</legend>
         <div>
         <label>Email: </label>
-        <input type="email"/>
+        <input type="email" name="email"/>
         </div>
         <div>
         <label>Senha: </label>
-        <input type="password"/>
+        <input type="password" name="senha"/>
         </div>
         </fieldset>
 
@@ -85,11 +91,11 @@
             <legend>Dados Pessoais: </legend>
             <div>
                 <label>Nome: </label>
-                <input type="text" placeholder="Ex: Luiz"/>
+                <input type="text" placeholder="Ex: Luiz" name="nome"/>
             </div>
             <div>
-                <label>Tel: </label>
-                <input type="text" placeholder="Ex: (XX) 9XXXX-XXXX"/>
+                <label>Cel: </label>
+                <input type="text" placeholder="Ex: (XX) 9XXXX-XXXX" name="cel"/>
             </div>
             <div>
                 <label>Sexo: </label>
@@ -100,11 +106,11 @@
             </div>
             <div>
                 <label>Data: </label>
-                <input type="date"/>
+                <input type="date" name="data_de_nascimento"/>
             </div>
             <div>
                 <label>Foto de perfil: </label>
-                <input type="file" accept="image/*"/>
+                <input type="file" accept="image/*" name="foto_de_perfil"/>
             </div>
         </fieldset>
 
@@ -112,23 +118,23 @@
             <legend>Endereço:</legend>
             <div>
                 <label>Rua: </label>
-                <input type="text"/>
+                <input type="text" name="rua"/>
             </div>
             <div>
                 <label>Complemento: </label>
-                <input type="text"/>
+                <input type="text" name="complemento"/>
             </div>
             <div>
                 <label>Numero: </label>
-                <input type="number" max="9999" min="1"/>
+                <input type="number" max="9999" min="1" name="numero_casa"/>
             </div>
             <div>
             <label>Cidade: </label>
-            <input type="text"/>
+            <input type="text" name="cidade"/>
             </div>
             <div>
                 <label>Estado: </label>
-                <select>
+                <select name="estado">
                     <option value="rj">Rio de Janeiro</option> <!--no value usar somente a UF no caso de estado para ficar mais facil para enviar ao servidor-->
                     <option value="sp">São Paulo</option>
                 </select>
@@ -139,14 +145,14 @@
             <legend>Anuncio: </legend>
             <div>
                 <label>Descreva como nos conheceu: </label>
-                <textarea maxlength="256" placeholder="Digite aqui..."></textarea>
+                <textarea maxlength="256" placeholder="Digite aqui..." name="como_nos_conheceu"></textarea>
             </div>
             <div>
-                <input type="checkbox" checked/>
+                <input type="checkbox" checked name="deseja_receber_emails"/>
                 <label>Deseja receber nossos e-mails?</label>
             </div>
         </fieldset>
-        <input type="submit" value="enviar"/> - Botão tipo 1 (input type="submit" value="enviar") <!--Para ter texto no botão enviar precisa ter o atributo value-->
+        <input type="submit" value="enviar" name="enviar"/> - Botão tipo 1 (input type="submit" value="enviar") <!--Para ter texto no botão enviar precisa ter o atributo value-->
         <br>
         <button type="submit">Enviar</button> - Botão tipo 2 (button type="submit">enviar)
     </form>
