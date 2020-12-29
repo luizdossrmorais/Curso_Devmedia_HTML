@@ -524,13 +524,52 @@
 
                     <p>O Elemento meta define metadados de um documento HTML5. Metadados são dados(informações) sobre dados.</p>
                     <p>Esses metadados(informações), são sobre o documento(html) e a pagina(site).E essas informações são usadas pelos navegadores padrões e especiais, motores de busca e outros serviços web.</p>
-                    <p>Basicamente o elemento meta é dividido em 2 atributos, o http-equiv(configurações de cache, redirecionamentos, codificação e linguagens) e o name(conteudo da pagina como palavras-chaves, descrição, controle de publico, e tambem o viewport(Design responsivo)), mas tambem temos outro atributo chamado link(linka documentos externos(css, javascript etc) ao documento html).</p>
+                    <p>Basicamente o elemento meta é dividido em 2 atributos, o http-equiv(configurações de cache, redirecionamentos, codificação e idioma) e o name(conteudo da pagina como palavras-chaves, descrição, controle de publico, e tambem o viewport(Design responsivo)), mas tambem temos outro atributo chamado link(linka documentos externos(css, javascript etc) ao documento html).</p>
                     <p>A tag meta fica dentro do Elemento head, e não possui filhos(so usa tag de abertura).</p>
                     <p>Os metadados não são visiveis ao usuario, mas são lidos pelos navegadores que carregam a pagina, motores de busca, desenvolvedores e outros serviços web.</p>
 
                     <h2>Atributos</h2>
 
-                        <p>No elemento meta, os atributos são responsaveis por configurar a forma como o documento e o site vai ser visto pelos navegadores, navegadores especiais e motores de busca</p>
+                        <p>No elemento meta, os atributos são responsaveis por configurar a forma como o documento e a pagina vai ser vista pelos navegadores padrões, navegadores especiais e motores de busca</p>
+
+                        <ul>
+
+                            <li>
+                                <h3>http-equiv</h3>
+
+                                <p>Este atributo controla as requisições [browser>servidor>PAGINA>browser]. </p>
+                                <p>ex: cache , redirecionamentos, codificação e idioma.</p>
+                                <br>
+                                <p>Vejamos abaixo um exemplo de uso do atributo http-equiv:</p>
+
+                                <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+                
+<!-- exemplo de uso do http-equiv  -->
+<!-- no atributo content colocamos o valor relacionado
+     com o valor no atributo http-equiv-->
+<!-- Veremos os valores que colocamos no atributo http-equiv, 
+     e depois atraves desse valor 
+     colocaremos o valor no atributo content-->
+
+<!-- Todo elemento dentro do elemento head,
+    NÃO é visivel ao usuario.-->
+
+<meta http-equiv="valor" content="valor">
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6DAT2K7G13" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                            </li>
+
+                            <li></li>
+                            
+                            <li></li>
+
+                        </ul>
 
                     <a href="#topo">[topo]</a>
                     </fieldset>
