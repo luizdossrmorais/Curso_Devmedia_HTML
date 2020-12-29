@@ -563,10 +563,56 @@
 
                     <br><br>
 
-                                    <h4>Valores</h4>
+                                    <h4>Valores do atributo http-equiv:</h4>
 
                                     <ul>
-                                        <li></li>
+                                        <li>cache-control (funciona ate a versão 1.1 do http).
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor cache-control do atributo http-equiv.</p>
+
+                                            <ul>
+                                                <li>public : a pagina fica armazenada no cache do navegador para todos os usuarios.</li>
+                                                <li>private : a pagina fica armazenada no cache do navegador apenas para o usuario atual.</li>
+                                                <li>no-cache : não armazena no cache do navegador.</li>
+                                                <li>no-store : cache temporario somente enquanto a pagina estiver aberta.</li>                                                
+                                            </ul>
+
+                                            <p>veja exemplos de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- public  -->
+
+<meta http-equiv="cache-control" content="public">
+
+<!-- private  -->
+
+<meta http-equiv="cache-control" content="private">
+
+<!-- no-cache  -->
+
+<meta http-equiv="cache-control" content="no-cache">
+
+<!-- no-store  -->
+
+<meta http-equiv="cache-control" content="no-store">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6DYPVYD8I8" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
                                         <li></li>
                                         <li></li>
                                         <li></li>
