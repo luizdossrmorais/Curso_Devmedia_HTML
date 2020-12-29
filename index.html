@@ -566,7 +566,7 @@
                                     <h4>Valores do atributo http-equiv:</h4>
 
                                     <ul>
-                                        <li>cache-control (funciona ate a versão 1.1 do http).
+                                        <li>cache-control (funciona ate a versão 1.1 do http). [cache do navegador]
 
                                             <p>No atributo content, temos alguns valores que são relacionados com o valor cache-control do atributo http-equiv.</p>
 
@@ -579,7 +579,7 @@
 
                                             <p>veja exemplos de uso abaixo:</p>
 
-                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+                                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
 
 <head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
                 
@@ -613,8 +613,71 @@ conteudo da pagina.
                     <br><br>
 
                                         </li>
-                                        <li></li>
-                                        <li></li>
+
+                                        <li>content-language. [idiomas que constam no documento] 
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor content-language do atributo http-equiv.</p>
+
+                                            <ul>
+                                                <li>pt-br,en-US,fr : pode colocar mais de 1 idioma, contanto que conste no documento.</li>
+                                            </ul>
+
+                                            <p>Veja exemplo de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- pt-br  -->
+
+<meta http-equiv="content-language" content="pt-br">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6ECEPAEMCA" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
+                                        <li>content-type. [tipo de conteudo na pagina, ex: html, texto,]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor content-type do atributo http-equiv.</p>
+
+                                            <ul>
+                                                <li>text/html : tipo de documento texto e html</li>
+                                                <li>charset=UTF-8 : codificação para acentuação.</li>
+                                            </ul>
+
+                                            <p>Veja exemplos de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- text/html;charset=UTF-8  -->
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6EJGL9YFPO" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
                                         <li></li>
                                         <li></li>
                                         <li></li>
