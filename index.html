@@ -678,7 +678,45 @@ conteudo da pagina.
                     <br><br>
 
                                         </li>
-                                        <li></li>
+
+                                        <li>expires. [quando a pagina expira no cache, necessitando ser requisitada novamente ao servidor pelo browser]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor expires do atributo http-equiv.</p>
+
+                                            <ul>
+                                                <li>0 : o valor zero expira no ato.</li>
+                                                <li>sun, 07 jul 2020 23:59 GMT : expira na data especificada.</li>
+                                            </ul>
+
+                                            <p>Veja exemplos de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- expira no ato, necessitando requisitar a pagina no servidor
+     toda vez que for acessar ela -->
+
+<meta http-equiv="expires" content="0">
+
+<!-- expira na data descrita abaixo -->
+
+     <meta http-equiv="expires" content="sun, 07 jul 2020 23:59 GMT">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6EVEJTZQ95" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
                                         <li></li>
                                         <li></li>
                                     </ul>
