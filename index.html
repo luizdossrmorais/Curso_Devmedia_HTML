@@ -1208,7 +1208,52 @@ conteudo da pagina.
 
 
                                         </li>
-                                        <li></li>
+
+                                        <li>viewport. [configura a area visivel de dispositivos(responsividade)]
+
+                                            <p>O view port é toda a area visivel na tela de dispositivos mobile, tablets e computadores.</p>
+                                            <p>Antes as paginas eram desenvolvidas somente para computadores, estaticas e sem preucupações com dimensões de largura.</p>
+                                            <p>Com a chegada dos celulares e tablets, surgiu a necessidade de diminuir a dimensão da pagina, e por conta da má visualização das paginas com dimensões estaticas em dispositivos serem muito grandes para caber na viewport, os navegadores desses dispositivos mobile e de tablets reduziram toda a pagina da web para se encaixar na tela.</p>
+                                            <p>incluindo o seguinte valor viewport no atributo name do elemento meta, podemos controlar essa resposividade direto no codigo html. </p>
+
+                                            <ul>
+                                                <li>valores para configurar o viewport:</li>
+                                                    <ul>
+                                                        <li>viewport : controla a area visivel.</li>
+                                                        <li>width=device-width : define a largura da pagina que varia dependendo do dispositivo.</li>
+                                                        <li>initial-scale=1.0 : define o nivel inicial de zoom na primeira vez que a pagina carrega no browser.</li>
+                                                    </ul>
+                                            </ul>
+
+                                            <br>
+                                            <p>Veja exemplos de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+
+<!-- exemplo de uso do viewport -->
+<!-- valor do atributo content relacionado com o
+        valor viewport do atributo name -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6QN4EDX703" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+
+
+                                        </li>
                                     </ul>
 
                             </li>
