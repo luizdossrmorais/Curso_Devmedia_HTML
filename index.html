@@ -524,7 +524,7 @@
 
                     <p>O Elemento meta define metadados de um documento HTML5. Metadados são dados(informações) sobre dados.</p>
                     <p>Esses metadados(informações), são sobre o documento(html) e a pagina(site).E essas informações são usadas pelos navegadores padrões e especiais, motores de busca e outros serviços web.</p>
-                    <p>Basicamente o elemento meta é dividido em 2 atributos, o http-equiv(configurações de cache, redirecionamentos, codificação e idioma) e o name(conteudo da pagina como palavras-chaves, descrição, controle de publico, e tambem o viewport(Design responsivo)), mas tambem temos outro atributo chamado link(linka documentos externos(css, javascript etc) ao documento html).</p>
+                    <p>Basicamente o elemento meta é dividido em 2 atributos, o http-equiv(configurações de cache, redirecionamentos, codificação e idioma) e o name(conteudo da pagina como palavras-chaves, descrição, controle de publico, e tambem o viewport(Design responsivo)).</p>
                     <p>A tag meta fica dentro do Elemento head, e não possui filhos(so usa tag de abertura).</p>
                     <p>Os metadados não são visiveis ao usuario, mas são lidos pelos navegadores que carregam a pagina, motores de busca, desenvolvedores e outros serviços web.</p>
 
@@ -832,7 +832,7 @@ conteudo da pagina.
                             <li>
                                 <h3>name</h3>
 
-                                <p>Este atributo controla as informações da pagina, documento html aos browsers padrões, browsers especiais e motores de busca. </p>
+                                <p>Este atributo controla as informações da pagina e o documento html aos browsers padrões, browsers especiais e motores de busca. </p>
                                 <p>ex: descrição, robots, palavras chaves, autor do site, programas que usou para criar o site, copyright, codificação e controle de publico.</p>
 
                                 <br>
@@ -870,13 +870,197 @@ conteudo da pagina.
                                 <h4>Valores do atributo name:</h4>
 
                                     <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>copyright. [direitos de desenvolvimento da pagina]
+
+                                        <p>No atributo content, temos alguns valores que são relacionados com o valor copyright do atributo name.</p>
+                                        <p>Veja exemplo de uso abaixo:</p>
+
+                                        <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- exemplo de uso do copyright  -->
+
+<meta name="copyright" content="2020 Luiz dos S. R. Morais">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6HOGNU2NF9" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+                                        </li>
+
+                                        <li>description. [descrição da pagina]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor description do atributo name.</p>
+                                            <p>Veja exemplo de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- exemplo de uso do description  -->
+
+<meta name="description" content="Pagina para visualizar o resultado no codigo fonte.">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6HRQH5UBDG" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
+                                        <li>keywords. [palavras chave referentes a pagina]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor keywords do atributo name.</p>
+                                            <p>Veja exemplo de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- exemplo de uso do keywords  -->
+
+<meta name="keywords" content="html5,codigo fonte">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6HUPC4936Z" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
+                                        <li>author. [autor da pagina]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor author do atributo name.</p>
+                                            <p>Veja exemplo de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- exemplo de uso do author  -->
+
+<meta name="author" content="Luiz dos S. R. Morais">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6HX1Q06FUN" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
+                                        <li>generator. [Qual softwares usou para desenvolver a pagina]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor generator do atributo name.</p>
+                                            <p>Veja exemplo de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- exemplo de uso do generator  -->
+
+<meta name="generator" content="Visual Studio Code, Git(vcs) SCM, GitHub Desktop">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6I29B1XVTO" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
+                                        <li>rating. [controle de publico (idade)]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor rating do atributo name.</p>
+                                            <p>temos 3 opções de valor no atributo content relacionados com o valor rating, vejamos abaixo quais são:</p>
+
+                                            <ul>
+                                                <li>general : conteudo para todas as idades.</li>
+                                                <li>16 years : conteudo para menores de 16 anos.</li>
+                                                <li>mature : conteudo para maiores de 18 anos.</li>
+                                            </ul>
+
+                                            <p>Veja exemplo de uso abaixo:</p>
+
+                                            <textarea disabled cols="100" rows="18" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+                
+<!-- exemplo de uso do general  -->
+
+<meta name="rating" content="general">
+
+<!-- exemplo de uso do 16 years  -->
+
+<meta name="rating" content="16 years">
+
+<!-- exemplo de uso do mature  -->
+
+<meta name="rating" content="mature">
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+conteudo da pagina.
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM6I6ZTCNGQF" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                        </li>
+
+                                        <li>robots. [robots dos motores de busca que indexam e/ou arquivam a pagina]
+
+                                            <p>No atributo content, temos alguns valores que são relacionados com o valor robots do atributo name.</p>
+                                            <p>temos 6 opções de valor no atributo content relacionados com o valor robots, vejamos abaixo quais são:</p>
+
+
+
+                                        </li>
                                         <li></li>
                                     </ul>
 
