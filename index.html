@@ -1652,17 +1652,53 @@ conteudo da pagina.
                                                 <li>metadata : o navegador deve carregar apenas os metadados junto com a pagina.</li>
                                                 
                                                 <li>none : o navegador não deve carregar o arquivo de audio junto com a pagina.</li>
-
+                                                
                                             </ol>
 
                                         </li>
+
+                                        <li>Veja exemplos dos atributos usados nos elementos <code>audio</code> e <code>source</code>: </li>
+
+                                        <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+<!-- // o arquivo de midia vai:
+			
+            - iniciar automaticamente.(autoplay)
+            - mostrar controles de media. (controls)
+            - reiniciar sempre que a musica acabar.(loop)
+            - vai carregar todo arquivo de audio junto com a pagina.					(preload)
+            - arquivo do tipo audio/mpeg. (type)-->
+
+     <audio autoplay controls loop muted preload="auto" > 
+    
+        <source type="audio/mpeg" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+
+            Seu navegador não suporta HTML5.
+
+    </audio>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7R3YKZXCMT" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
                                     </ul>
 
                                 </li>
                             </ul>
 
                             <p>O elemento <code>source</code> pode ser usado para listas todas as opções de extensões diferentes desse audio, deixando para o browser escolher a extensão que mais é compativel.</p>
-                            <p>Veja exemplo de uso do elemento audio abaixo:</p>
+                            <p>Veja exemplo de uso simples do elemento audio abaixo:</p>
                             
                             <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
 
@@ -1672,7 +1708,7 @@ conteudo da pagina.
 
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
-    <audio controls="controls"> <!-- // uso do audio para midia sonora  -->
+    <audio controls> <!-- // uso do audio para midia sonora  -->
 
         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
 
@@ -1685,7 +1721,7 @@ conteudo da pagina.
                     </textarea>
 
                     
-                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7N656OB13S" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7R5F9NWXPA" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                     <br><br>
 
