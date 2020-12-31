@@ -1593,7 +1593,74 @@ conteudo da pagina.
 
                         <li><h2>audio.</h2>
                             
-                            <p>O elemento <code>figure</code> é usado para adicionar conteudo sonoro em uma pagina, e é usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos type, src, autoplay, controls, loop, muted e preload.</p>
+                            <p>O elemento <code>figure</code> é usado para adicionar conteudo sonoro em uma pagina, e é usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos <code>type</code>, <code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, <code>muted</code> e <code>preload</code>.</p>
+
+                            <ul>
+                                <li><h3>Atributos</h3>
+
+                                    <ul>
+                                        <li>type. [usado no elemento <code>source</code>]
+
+                                            <p>Esse atributo especifica o tipo de midia(mp3, ogg, etc) da internet.</p>
+                                            
+                                        </li>
+
+                                        <li>src. [usado no elemento <code>source</code>]
+                                        
+                                            <p>Esse atributo define a localização/origem do arquivo de audio.</p>
+                                        
+                                        </li>
+
+                                        <li>autoplay. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido o arquivo de audio reproduzira automaticamente.</p>
+
+                                        </li>
+
+                                        <li>controls. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido especifica que os controles de audio devem ser exibidos.E são:</p>
+
+                                            <ol type="a">
+                                                <li>play.</li>
+                                                <li>pause.</li>
+                                                <li>volume.</li>
+                                                <li>seeking.</li>
+                                            </ol><br>
+
+                                        </li>
+
+                                        <li>loop. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido o audio vai reiniciar toda vez que acabar.</p>
+
+                                        </li>
+
+                                        <li>muted. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido a saida de audio devera ser silenciada.</p>
+
+                                        </li>
+                                        <li>preload. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo permite controlar a forma como o audio vai ser carregado junto com a pagina.</p>
+
+                                            <ol type="a">
+
+                                                <li>auto : o navegador deve carregar todo o arquivo de audio junto com a pagina.</li>
+
+                                                <li>metadata : o navegador deve carregar apenas os metadados junto com a pagina.</li>
+                                                
+                                                <li>none : o navegador não deve carregar o arquivo de audio junto com a pagina.</li>
+
+                                            </ol>
+
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+
                             <p>O elemento <code>source</code> pode ser usado para listas todas as opções de extensões diferentes desse audio, deixando para o browser escolher a extensão que mais é compativel.</p>
                             <p>Veja exemplo de uso do elemento audio abaixo:</p>
                             
