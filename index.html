@@ -1641,23 +1641,32 @@ conteudo da pagina.
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
 <!-- // o arquivo de midia vai:
-- iniciar automaticamente.(autoplay)
-- mostrar controles de media. (controls)
-- reiniciar sempre que a musica acabar.(loop)
-- vai carregar todo arquivo de audio junto com a pagina.(preload)
-- arquivo do tipo audio/mpeg. (type)  -->
+- [audio] iniciar automaticamente.(autoplay)
+- [audio] mostrar controles de media. (controls)
+- [audio] reiniciar sempre que a musica acabar.(loop)
+- [audio] vai carregar todo arquivo de audio junto com a pagina.(preload)
+- [source] arquivo do tipo audio/mpeg. (type)
+- [source] origem do arquivo de audio (src)
+  -->
 
-     <audio autoplay controls loop muted preload="auto" > 
-        <source type="audio/mpeg" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+
+
+    <audio autoplay controls loop muted preload="auto" > 
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
             Seu navegador não suporta a tag audio do HTML5.
+
     </audio>
+
+
+
 
 </body>
                                         
                     </textarea>
 
                     
-                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7RAZE6WNEJ" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMBJMY5B9SHD" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                     <br><br>
 
@@ -1666,7 +1675,7 @@ conteudo da pagina.
                                 </li>
                             </ul>
 
-                            <p>O elemento <code>source</code> pode ser usado para listar todas as opções de extensões diferentes desse audio, deixando para o browser escolher a extensão que mais é compativel.</p>
+                            <p>O elemento <code>source</code> pode ser usado para listar todas as opções de extensões diferentes desse audio, deixando para o browser escolher a extensão que mais é compativel(mp3 ou ogg).</p>
                             <p>Veja exemplo de uso simples do elemento audio abaixo:</p>
                             
                             <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
@@ -1677,20 +1686,25 @@ conteudo da pagina.
 
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
-    <audio controls> <!-- // uso do audio para midia sonora  -->
 
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+
+    <audio controls> 
+
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
 
             Seu navegador não suporta  a tag audio do HTML5.
 
     </audio>
+
+
 
 </body>
                                         
                     </textarea>
 
                     
-                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7R5F9NWXPA" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMBJLR7ZLENW" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                     <br><br>
 
@@ -1798,23 +1812,34 @@ conteudo da pagina.
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
 <!-- // o arquivo de video vai:
-- iniciar automaticamente.(autoplay)
-- mostrar controles de media. (controls)
-- reiniciar sempre que a musica acabar.(loop)
-- vai carregar todo arquivo de audio junto com a pagina.(preload)
-- arquivo do tipo audio/mpeg. (type)  -->
+- [video] iniciar automaticamente.(autoplay)
+- [video] mostrar controles de media. (controls)
+- [video] reiniciar sempre que a musica acabar.(loop)
+- [video] iniciar com som silenciado.(mute)
+- [video] vai carregar todo arquivo de audio junto com a pagina.(preload=auto)
+- [video] imagem capa para video. (poster)
+- [video] altura do video. (height)
+- [video] largura do video. (width)
+- [source] arquivo do tipo audio/mpeg. (type) 
+- [source] origem do video. (src)  
+-->
 
-     <audio autoplay controls loop muted preload="auto" > 
-        <source type="audio/mpeg" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+
+
+     <video autoplay controls loop muted preload="auto" poster="" height="480" width="500"> 
+                    <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
             Seu navegador não suporta a tag audio do HTML5.
-    </audio>
+        </video>
+
+
 
 </body>
                                         
                     </textarea>
 
                     
-                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7RAZE6WNEJ" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMBJCRN34L0W" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                     <br><br>
 
@@ -1823,7 +1848,7 @@ conteudo da pagina.
                                 </li>
                             </ul>
 
-                            <p>O elemento <code>source</code> pode ser usado para listar todas as opções de extensões diferentes desse audio, deixando para o browser escolher a extensão que mais é compativel.</p>
+                            <p>O elemento <code>source</code> pode ser usado para listar todas as opções de extensões diferentes desse video, deixando para o browser escolher a extensão que mais é compativel(mp4 ou ogg).</p>
                             <p>Veja exemplo de uso simples do elemento audio abaixo:</p>
                             
                             <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
@@ -1834,20 +1859,25 @@ conteudo da pagina.
 
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
-    <audio controls> <!-- // uso do audio para midia sonora  -->
 
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+
+    <video controls>
+
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
 
             Seu navegador não suporta  a tag audio do HTML5.
 
-    </audio>
+    </video>
+
+
 
 </body>
                                         
                     </textarea>
 
                     
-                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7R5F9NWXPA" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMBJKJ2NW17M" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                     <br><br>
                             
