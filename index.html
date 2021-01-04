@@ -1559,7 +1559,14 @@ conteudo da pagina.
 
                         <li><h2>audio.</h2>
                             
-                            <p>O elemento <code>audio</code> é usado para adicionar conteudo sonoro em uma pagina, e é usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos <code>type</code>, <code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, <code>muted</code> e <code>preload</code>.</p>
+                            <p>O elemento <code>audio</code> é usado para adicionar conteudo sonoro em uma pagina</p>
+
+                            
+                            <p>O texto entre as tags <code>audio</code> será visivel caso o navegador do usuario não for compativel com o elemento <code>video</code>.</p>
+
+                            <p>O elemento <code>source</code> traz diferentes tipos de fontes de audio(extensções como, .mp3, .ogg, etc), e ter mais de uma opção de extensão de audio ajuda navegadores que não aceitam todos tipos de extensões.</p>
+                            
+                            <p>É usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos <code>type</code>, <code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, <code>muted</code> e <code>preload</code>.</p>
 
                             <ul>
                                 <li><h3>Atributos</h3>
@@ -1690,6 +1697,140 @@ conteudo da pagina.
                         </li>
 
                         <li><h2>video.</h2>
+                            
+                            <p>O elemento <code>video</code> é usado para adicionar conteudo de video em uma pagina, como clipe de video ou outras transmissões.</p>
+
+                            <p>O texto entre as tags <code>video</code> será visivel caso o navegador do usuario não for compativel com o elemento <code>video</code>.</p>
+
+                            <p>O elemento <code>source</code> traz diferentes tipos de fontes de video(extensções como, .mp4, .vga, etc), e ter mais de uma opção de extensão de video ajuda navegadores que não aceitam todos tipos de extensões.</p>
+                            
+                            <p>É usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos <code>type</code>, <code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, <code>muted</code>, <code>preload</code>, <code>height</code>, <code>poster</code> e <code>width</code>.</p>
+
+                            <ul>
+                                <li><h3>Atributos</h3>
+
+                                    <ul>
+                                        <li>type. [usado no elemento <code>source</code>]
+
+                                            <p>Esse atributo especifica o tipo de midia(mp3, ogg, etc) da internet.</p>
+                                            
+                                        </li>
+
+                                        <li>src. [usado no elemento <code>source</code>]
+                                        
+                                            <p>Esse atributo define a localização/origem do arquivo de audio.</p>
+                                        
+                                        </li>
+
+                                        <li>autoplay. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido o arquivo de audio reproduzira automaticamente.</p>
+
+                                        </li>
+
+                                        <li>controls. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido especifica que os controles de audio devem ser exibidos.E são:</p>
+
+                                            <ol type="a">
+                                                <li>play.</li>
+                                                <li>pause.</li>
+                                                <li>volume.</li>
+                                                <li>seeking.</li>
+                                            </ol><br>
+
+                                        </li>
+
+                                        <li>loop. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido o audio vai reiniciar toda vez que acabar.</p>
+
+                                        </li>
+
+                                        <li>muted. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido a saida de audio devera ser silenciada.</p>
+
+                                        </li>
+                                        <li>preload. [usado no elemento <code>audio</code>]
+
+                                            <p>Esse atributo permite controlar a forma como o audio vai ser carregado junto com a pagina.</p>
+
+                                            <ol type="a">
+
+                                                <li>auto : o navegador deve carregar todo o arquivo de audio junto com a pagina.</li>
+
+                                                <li>metadata : o navegador deve carregar apenas os metadados junto com a pagina.</li>
+                                                
+                                                <li>none : o navegador não deve carregar o arquivo de audio junto com a pagina.</li>
+                                                
+                                            </ol>
+
+                                        </li>
+                                        <br>
+                                        <li>Veja exemplos dos atributos usados nos elementos <code>audio</code> e <code>source</code>: </li>
+
+                                        <textarea disabled cols="100" rows="29" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+<!-- // o arquivo de midia vai:
+- iniciar automaticamente.(autoplay)
+- mostrar controles de media. (controls)
+- reiniciar sempre que a musica acabar.(loop)
+- vai carregar todo arquivo de audio junto com a pagina.(preload)
+- arquivo do tipo audio/mpeg. (type)  -->
+
+     <audio autoplay controls loop muted preload="auto" > 
+        <source type="audio/mpeg" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+            Seu navegador não suporta a tag audio do HTML5.
+    </audio>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7RAZE6WNEJ" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                                    </ul>
+
+                                </li>
+                            </ul>
+
+                            <p>O elemento <code>source</code> pode ser usado para listar todas as opções de extensões diferentes desse audio, deixando para o browser escolher a extensão que mais é compativel.</p>
+                            <p>Veja exemplo de uso simples do elemento audio abaixo:</p>
+                            
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <audio controls> <!-- // uso do audio para midia sonora  -->
+
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+
+            Seu navegador não suporta  a tag audio do HTML5.
+
+    </audio>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GM7R5F9NWXPA" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
                             
 
                         </li>
