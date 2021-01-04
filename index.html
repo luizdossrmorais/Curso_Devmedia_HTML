@@ -1704,7 +1704,7 @@ conteudo da pagina.
 
                             <p>O elemento <code>source</code> traz diferentes tipos de fontes de video(extensções como, .mp4, .vga, etc), e ter mais de uma opção de extensão de video ajuda navegadores que não aceitam todos tipos de extensões.</p>
                             
-                            <p>É usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos <code>type</code>, <code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, <code>muted</code>, <code>preload</code>, <code>height</code>, <code>poster</code> e <code>width</code>.</p>
+                            <p>É usado junto com os elementos <code>source</code> para localizar a origem do audio e os atributos <code>type</code>, <code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, <code>muted</code>, <code>preload</code>, <code>poster</code>, <code>height</code> e <code>width</code>.</p>
 
                             <ul>
                                 <li><h3>Atributos</h3>
@@ -1712,63 +1712,82 @@ conteudo da pagina.
                                     <ul>
                                         <li>type. [usado no elemento <code>source</code>]
 
-                                            <p>Esse atributo especifica o tipo de midia(mp3, ogg, etc) da internet.</p>
+                                            <p>Esse atributo especifica o tipo de video(mp4, vga, etc) da internet.</p>
                                             
                                         </li>
 
                                         <li>src. [usado no elemento <code>source</code>]
                                         
-                                            <p>Esse atributo define a localização/origem do arquivo de audio.</p>
+                                            <p>Esse atributo define a localização/origem do arquivo de video.</p>
                                         
                                         </li>
 
-                                        <li>autoplay. [usado no elemento <code>audio</code>]
+                                        <li>autoplay. [usado no elemento <code>video</code>]
 
-                                            <p>Esse atributo é do tipo booleano, quando definido o arquivo de audio reproduzira automaticamente.</p>
+                                            <p>Esse atributo é do tipo booleano, quando definido o arquivo de video reproduzira automaticamente.</p>
 
                                         </li>
 
-                                        <li>controls. [usado no elemento <code>audio</code>]
+                                        <li>controls. [usado no elemento <code>video</code>]
 
-                                            <p>Esse atributo é do tipo booleano, quando definido especifica que os controles de audio devem ser exibidos.E são:</p>
+                                            <p>Esse atributo é do tipo booleano, quando definido especifica que os controles de video devem ser exibidos.E são:</p>
 
                                             <ol type="a">
                                                 <li>play.</li>
                                                 <li>pause.</li>
                                                 <li>volume.</li>
                                                 <li>seeking.</li>
+                                                <li>fullscreen toggle.</li>
+                                                <li>legendas(quando disponivel).</li>
+                                                <li>faixa(quando disponivel).</li>
                                             </ol><br>
 
                                         </li>
 
-                                        <li>loop. [usado no elemento <code>audio</code>]
+                                        <li>loop. [usado no elemento <code>video</code>]
 
-                                            <p>Esse atributo é do tipo booleano, quando definido o audio vai reiniciar toda vez que acabar.</p>
-
-                                        </li>
-
-                                        <li>muted. [usado no elemento <code>audio</code>]
-
-                                            <p>Esse atributo é do tipo booleano, quando definido a saida de audio devera ser silenciada.</p>
+                                            <p>Esse atributo é do tipo booleano, quando definido o video vai reiniciar toda vez que acabar.</p>
 
                                         </li>
-                                        <li>preload. [usado no elemento <code>audio</code>]
 
-                                            <p>Esse atributo permite controlar a forma como o audio vai ser carregado junto com a pagina.</p>
+                                        <li>muted. [usado no elemento <code>video</code>]
+
+                                            <p>Esse atributo é do tipo booleano, quando definido a saida de audio do video devera ser silenciada.</p>
+
+                                        </li>
+                                        <li>preload. [usado no elemento <code>video</code>]
+
+                                            <p>Esse atributo permite controlar a forma como o video vai ser carregado junto com a pagina.</p>
 
                                             <ol type="a">
 
-                                                <li>auto : o navegador deve carregar todo o arquivo de audio junto com a pagina.</li>
+                                                <li>auto : o navegador deve carregar todo o arquivo de video junto com a pagina.</li>
 
                                                 <li>metadata : o navegador deve carregar apenas os metadados junto com a pagina.</li>
                                                 
-                                                <li>none : o navegador não deve carregar o arquivo de audio junto com a pagina.</li>
+                                                <li>none : o navegador não deve carregar o arquivo de video junto com a pagina.</li>
                                                 
                                             </ol>
 
                                         </li>
+                                        <li>poster. [usado no elemento <code>video</code>]
+
+                                            <p>Esse atributo permite escolher uma imagem que vai ser apresentada enquanto o video carrega, ou enquanto o usuario não apertar o play, caso contrario o padrão sera o primeiro quadro do video.</p>
+                                            <p>É necessario estipular o link de origem da imagem. ex, poster="link"</p>
+
+                                        </li>
+                                        <li>height. [usado no elemento <code>video</code>]
+
+                                            <p>Esse atributo especifica a altura em pixels de um reprodutor de video.</p>
+                                            
+                                        </li>
+                                        <li>width. [usado no elemento <code>video</code>]
+
+                                            <p>Esse atributo especifica a altura em pixels de um reprodutor de video.</p>
+
+                                        </li>
                                         <br>
-                                        <li>Veja exemplos dos atributos usados nos elementos <code>audio</code> e <code>source</code>: </li>
+                                        <li>Veja exemplos dos atributos usados nos elementos <code>video</code> e <code>source</code>: </li>
 
                                         <textarea disabled cols="100" rows="29" title="Veja o resultado deste codigo fonte no link abaixo!">
 
@@ -1778,7 +1797,7 @@ conteudo da pagina.
 
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
-<!-- // o arquivo de midia vai:
+<!-- // o arquivo de video vai:
 - iniciar automaticamente.(autoplay)
 - mostrar controles de media. (controls)
 - reiniciar sempre que a musica acabar.(loop)
