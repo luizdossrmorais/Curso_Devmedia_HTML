@@ -1920,25 +1920,293 @@ conteudo da pagina.
                         </li>
 
                         <li><h2>header.</h2>
+
+                            <p>Esse elemento representa um conteudo introdutorio/cabeçalho ou um conjunto de links, normalmente dentro desse elemento colocamos:.</p>
+
+                            <ul>
+                                <li>um ou mais elementos <code>h1, h2, etc.</code></li>
+                                <li>logotipo ou icone da pagina.</li>
+                                <li>informações de autoria.</li>
+                            </ul>
+
+                            <p>Algumas regras de uso:</p>
+
+                            <ul>
+                                <li>pode usar dentro dos elementos:
+                                    <ul>
+                                        <li>main</li>
+                                        <li>section</li>
+                                        <li>article</li>
+                                        <li>aside</li>
+                                    </ul>
+                            </ul>
+
+                            <p>Veja exemplo de uso abaixo:</p>
+
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <header>
+        <h1>Cabeçalho, menu de navegação, icone e autoria.</h1>
+    </header>
+
+    <main>        <!--   //   posso por header dentro de main.  -->
+        <header>
+            <h2>Cabeçalho de main...</h2>
+        </header>
+        <p>Texto principal da pagina no main.</p>
+        <footer>
+            <h2>Rodape de main</h2>
+        </footer>
+    </main>
+
+    <section>     <!--   // posso por header dentro de section.  -->
+        <header>
+            <h2>Seção - esporte</h2>
+        </header>
+
+        <article>    <!--   // posso por header dentro de article.  -->
+            <header>
+                <h3>artigo esporte 1</h3>
+            </header>
+            <p>Texto artigo esporte 1.</p>
+            <footer>
+                <p>rodape do artigo esporte 1</p>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>artigo esporte 2</h3>
+            </header>
+            <p>Texto artigo esporte 2.</p>
+            <footer>
+                <p>rodape do artigo esporte 2</p>
+            </footer>
+        </article>
+    </section>
+
+    <aside> <!--   // posso por header dentro de aside.  -->
+        <header>
+            <h2>conteudo extra sobre esporte.</h2>
+        </header>
+        <p>texto do conteudo extra sobre esporte.</p>
+        <footer>
+            <p>Rodape do conteudo extra sobre esporte.</p>
+        </footer>
+    </aside>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMEZA6XM27MO" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
                             
 
                         </li>
 
                         <li><h2>main.</h2>
+
+                            
+                            <p>Esse elemento especifica um conteudo principal do documento, não deve conter informações repetidas como, menu de navegação, copyright, logotipo, etc.</p>
+                            <p>Não deve ser filho dos elementos:</p>
+
+                            <ul>
+                                <li><code>header.</code></li>
+                                <li><code>section.</code></li>
+                                <li><code>article.</code></li>
+                                <li><code>footer.</code></li>
+                                <li><code>aside.</code></li>
+                                <li><code>nav.</code></li>
+                            </ul>
+
+                            <p>Veja exemplo de uso abaixo:</p>
+
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <header>
+        <h1>Cabeçalho, menu de navegação, icone e autoria.</h1>
+    </header>
+
+    <main>        <!--   //  conteudo unico no documento.  -->
+        <header>
+            <h2>Cabeçalho de main...</h2>
+        </header>
+        <p>Texto principal da pagina no main.</p>
+        <footer>
+            <h2>Rodape de main</h2>
+        </footer>
+    </main>
+
+    <section>    
+        <header>
+            <h2>Seção - esporte</h2>
+        </header>
+
+        <article>   
+            <header>
+                <h3>artigo esporte 1</h3>
+            </header>
+            <p>Texto artigo esporte 1.</p>
+            <footer>
+                <p>rodape do artigo esporte 1</p>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>artigo esporte 2</h3>
+            </header>
+            <p>Texto artigo esporte 2.</p>
+            <footer>
+                <p>rodape do artigo esporte 2</p>
+            </footer>
+        </article>
+    </section>
+
+    <footer>
+        <h2>Rodape</h2>
+        <p>texto do rodape.</p>
+    </footer>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMEZH9S3JPB5" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
                         
                         </li>
 
                         <li><h2>section.</h2>
+
+                            
+                            <p>Usado para definir uma seção no documento, ex: esportes, moda, saude, etc.</p>
+                            <p>Veja exemplo de uso abaixo:</p>
+
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <section>
+        <h1>Seção - Esporte</h1>
+        <p>Texto esporte.</p>
+    </section>
+
+    <section>
+        <h1>Seção - moda</h1>
+        <p>Texto de moda.</p>
+    </section>
+
+    <section>
+        <h1>Seção - saude</h1>
+        <p>Texto de saude.</p>
+    </section>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMEZTCB2BVKI" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
 
                                     
                         </li>
                                 
                         <li><h2>article.</h2>
 
+                                                       
+                            <p>Usado para definir um conteudo independente do resto do site.</p>
+                            <p>Veja exemplo de uso abaixo:</p>
+
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <article>
+        <h1>Artigo - Esporte</h1>
+        <p>Texto esporte.</p>
+    </article>
+
+    <article>
+        <h1>Artigo - moda</h1>
+        <p>Texto de moda.</p>
+    </article>
+
+    <article>
+        <h1>Artigo - saude</h1>
+        <p>Texto de saude.</p>
+    </article>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMEZYSVCG6UI" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
                                     
                         </li>
                                 
                         <li><h2>aside.</h2>
+ 
+                            <p>Usado para definir um conteudo alem do conteudo circundante, ela deve estar indiretamente ligada a informação ao seu redor, normalmente vemos o elemento <code>aside</code> como uma barra lateral.</p>
+                            <p>Veja exemplo de uso abaixo:</p>
+
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <article>
+        <h1>Artigo - Esporte</h1>
+        <p>Texto esporte.</p>
+    </article>
+
+    <aside>
+        <h1>Quadras para alugar. (Relacionado/indiretamente)</h1>
+        <p>Texto das quadra para alugar.</p>
+    </aside>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMF16SJNWX6X" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
 
                                     
                         </li>
@@ -1946,6 +2214,45 @@ conteudo da pagina.
                         </li>
 
                         <li><h2>footer.</h2>
+
+                            
+                            <p>Usado para definir um rodape para o documento.</p>
+
+                            <p>Esse elemento representa um conteudo de rodape, normalmente dentro desse elemento colocamos:</p>
+
+                            <ul>
+                                <li>informações de autoria.</li>
+                                <li>direitos autorais.</li>
+                                <li>informações de contato.</li>
+                                <li>Sitemap.</li>
+                                <li>de volta aos links superiores(topo).</li>
+                                <li>documentos relacionados.</li>
+                                <li>menu.</li>
+                            </ul>
+
+                            <p>Veja exemplo de uso abaixo:</p>
+
+                            <textarea disabled cols="100" rows="25" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+    <footer>
+        <p>Author: Luiz dos S. R. Morais.</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+      </footer>
+
+</body>
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMF1DYSV0BZM" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
                             
 
                         </li>
