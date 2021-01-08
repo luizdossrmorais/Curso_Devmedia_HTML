@@ -3088,6 +3088,8 @@ conteudo da pagina.
                     <p>Esse elemento é usado para explicar trechos do codigo fonte afim de não se perder quando for modificar o mesmo trecho porteriormente, tambem pode usar para organizar e marcar trechos de codigo fonte.</p>
                     <p>Ele não é visto pelo usuario, por isso seu uso é exclusivo para quem programa, veja ele aplicado no codigo fonte abaixo:</p>
 
+                    <p>Veja um exemplo de uso:</p>
+
                     <br>
 
                     <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
@@ -3113,7 +3115,164 @@ conteudo da pagina.
                     <fieldset>
                         <legend id="item10">j. Imagens</legend>
 
-                    <p></p>
+                        <p>Para "adicionar" imagens em uma pagina usamos o elemento <code>img</code>, esse elemento vincula/linka imagens atravez do endereço de origem, e adiciona essa imagem no espaço reservado criado pelo elemento <code>img</code>.</p>
+
+                        <p>Então podemos dizer que quando "adicionamos" uma imagem na pagina, estamos vinculando/linkando atravez de um endereço de origem, e mostrando essa imagem atravez do espaço de retenção criado pelo elemento <code>img</code>.</p>
+
+                        <p>O elemento <code>img</code> possui muitos atributos interessantes, mas usamos somente alguns, e veremos uma lista desses atributos abaixo:</p>
+
+                        <ul>
+                            <li>Atributos do elemento <code>img</code>:</li>
+
+                            <ol>
+                                <li><code>alt</code></li>
+                                <li><code>title</code>    [global]</li>
+                                <li><code>src</code></li>
+                                <li><code>height</code></li>
+                                <li><code>width</code></li>
+                                <li><code>usemap</code></li>
+                            </ol>
+                        </ul>
+
+                        <ol>
+                            <li><h2><code>alt</code></h2>
+
+                                <p>Esse atributo é usado para definir um texto caso a imagem não carregue, existem alguns motivos responsaveis por isso ocorrer, que é conexão lenta, erro em algum parametro no elemento <code>img</code>, etc.</p>
+
+                                <p>Esse atributo permite a acessibilidade, dando poder aos leitores de tela que leem esse texto.</p>
+
+                                <p>Veja um exemplo de uso:</p>
+
+                    <br>
+
+                    <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+<!-- imagem não carregada, o texto aparece!.  -->
+<img src="" alt="Texto alternativo caso a imagem não carregue.">
+
+<br><br>
+
+<!-- imagem carregada, o texto NÃO aparece.  -->
+<img src="img_girl.jpg" alt="Texto alternativo caso a imagem não carregue.">
+
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMGQ2YFXOGDM" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+
+                            </li>
+                            <li><h2><code>title</code>   -[global]</h2>
+
+                                <p>Um atributo [global] pode ser usado em todos elementos no HTML5.</p>
+
+                                <p>Esse atributo é usado para definir um texto que aparece ao passar o mouse por cima da imagem, .</p>
+
+                                <p>Veja um exemplo de uso:</p>
+
+                    <br>
+
+                    <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+
+<!-- imagem carregada, o texto NÃO aparece.  -->
+<img src="img_girl.jpg" title="Texto aparece ao passar o mouse na imagem.">
+
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMGQ6QSB5Q18" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                            </li>
+                            <li><h2><code>src</code></h2>
+
+                                <p>Esse atributo define o endereço de origem da imagem vinculada/linkada.</p>
+
+                                <p>Esse atributo é necessario porque sem ele não existe imagem, assim como o atributo <code>alt</code> que mostra um texto caso a imagem não apareça.</p>
+
+                                <p>Existem 2 formas de vincular/linkar uma imagem, de forma externa e relativa, veja exemplos abaixo:</p>
+
+                                <ul>
+                                    <li>externa.
+                                        <p>Endereços de origem de imagens de outros sites/dominios, essa forma de vincular/linkar decai sob leis de direitos autorais, outro problema é sobre a disponibilidade dessa imagem, como esta em outro site ela pode a qualquer momento ficar indisponivel, veja um exemplo de link externo: http://siteexterno.com.br/imagemexterna.jpg.</p>
+                                    </li>
+
+                                    <li>relativa.
+                                        <p>Endereços de origem de imagens no mesmo diretorio da pagina em que essa imagem vai ser vinculada/linkada, otima escolha para sites quandoo pensamos em disponibilidade da imagem, veja um exemplo de link relativo: /imagemrelativa.jpg</p>
+                                    </li>
+                                </ul>
+
+                                <p>Veja um exemplo de uso e aplicação da forma externa e relativa:</p>
+
+                    <br>
+
+                    <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+<!-- Externa.  -->
+<img src="https://www.imagemhost.com.br/image/tgQ3x" alt="Texto aparece ao passar o mouse na imagem.">
+
+
+<!-- Relativa.  -->
+<img src="img_girl.jpg" alt="Texto aparece ao passar o mouse na imagem.">
+
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMGQ6QSB5Q18" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                            </li>
+                            <li><h2><code>height</code></h2>
+                            </li>
+                            <li><h2><code>width</code></h2>
+                            </li>
+                            <li><h2><code>usemap</code></h2>
+                            </li>
+                        </ol>
 
                     <a href="#topo">[topo]</a>
                     </fieldset>
