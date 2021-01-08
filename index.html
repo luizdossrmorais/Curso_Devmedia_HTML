@@ -3145,7 +3145,7 @@ conteudo da pagina.
 
                     <br>
 
-                    <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+                    <textarea disabled cols="100" rows="22" title="Veja o resultado deste codigo fonte no link abaixo!">
 
 <head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
     <title></title>
@@ -3181,13 +3181,13 @@ conteudo da pagina.
 
                                 <p>Um atributo [global] pode ser usado em todos elementos no HTML5.</p>
 
-                                <p>Esse atributo é usado para definir um texto que aparece ao passar o mouse por cima da imagem, .</p>
+                                <p>Esse atributo é usado para definir um texto que aparece ao passar o mouse por cima da imagem.</p>
 
                                 <p>Veja um exemplo de uso:</p>
 
                     <br>
 
-                    <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+                    <textarea disabled cols="100" rows="22" title="Veja o resultado deste codigo fonte no link abaixo!">
 
 <head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
     <title></title>
@@ -3224,7 +3224,7 @@ conteudo da pagina.
 
                                 <ul>
                                     <li>externa.
-                                        <p>Endereços de origem de imagens de outros sites/dominios, essa forma de vincular/linkar decai sob leis de direitos autorais, outro problema é sobre a disponibilidade dessa imagem, como esta em outro site ela pode a qualquer momento ficar indisponivel, veja um exemplo de link externo: http://siteexterno.com.br/imagemexterna.jpg.</p>
+                                        <p>Endereços de origem de imagens de outros sites/dominios, essa forma de vincular/linkar decai sob leis de direitos autorais, outro problema é sobre a disponibilidade dessa imagem, como esta em outro site ela pode a qualquer momento ficar indisponivel, veja um exemplo de link externo: http://siteexterno.com.br/imagemexterna.jpg</p>
                                     </li>
 
                                     <li>relativa.
@@ -3236,7 +3236,7 @@ conteudo da pagina.
 
                     <br>
 
-                    <textarea disabled cols="100" rows="11" title="Veja o resultado deste codigo fonte no link abaixo!">
+                    <textarea disabled cols="100" rows="22" title="Veja o resultado deste codigo fonte no link abaixo!">
 
 <head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
     <title></title>
@@ -3266,11 +3266,98 @@ conteudo da pagina.
                     <br><br>
 
                             </li>
-                            <li><h2><code>height</code></h2>
-                            </li>
-                            <li><h2><code>width</code></h2>
-                            </li>
+                            <li><h2><code>height | width</code></h2>
+
+                                <p>É importante definir esses 2 atributos juntos, porque o atributo <code>height</code> cuida da altura e o atributo <code>widht</code> cuida da largura, eles juntos definem a largura e altura do espaço reservado para receber uma imagem.</p>
+
+                                <ul>
+                                    <li><h3><code>height</code>. [altura]</h3>
+
+                                <p>Esse atributo define a altura do espaço reservado que vai receber a imagem, é importante defini-lo para que o espaço para a imagem fique reservado na pagina.</p>
+
+                                <p>Evite forçar diminuir o tamanho da imagem com esse atributo, uma imagem grande forçada a caber nas dimensões menores do atributo <code>height</code>  não diminui o tempo de carregamento dessa imagem, mesmo que o <code>height</code> esteja definindo o espaço da imagem como a menor possivel; Então use primeiro programas de edição para definir um tamanho adequado para a imegam, depois defina o <code>height</code> para reservar o espaço na pagina e assim receber a imagem que virá atraves do endereço de origem, dessa forma vai fluir melhor o carregamento da sua imagem.</p>
+
+                                    </li>
+
+                                    <li><h3><code>widht</code>. [largura]</h3>
+
+                                <p>Esse atributo define a largura do espaço reservado que vai receber a imagem, é importante defini-lo para que o espaço para a imagem fique reservado na pagina.</p>
+
+                                <p>Evite forçar diminuir o tamanho da imagem com esse atributo, uma imagem grande forçada a caber nas dimensões menores do atributo <code>widht</code>  não diminui o tempo de carregamento dessa imagem, mesmo que o <code>widht</code> esteja definindo o espaço da imagem como a menor possivel; Então use primeiro programas de edição para definir um tamanho adequado para a imegam, depois defina o <code>widht</code> para reservar o espaço na pagina e assim receber a imagem que virá atraves do endereço de origem, dessa forma vai fluir melhor o carregamento da sua imagem.</p>
+                                    </li>
+                                </ul>
+
+                                
+                                <p>Veja um exemplo de uso desses 2 atributos:</p>
+
+                    <br>
+
+                    <textarea disabled cols="100" rows="22" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+
+<!-- definindo o tamanho do espaço reservado para receber a imagem.  -->
+<img src="img_girl.jpg" height="400" width="200">
+
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMGTDINSZ1PW" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br> 
+
                             <li><h2><code>usemap</code></h2>
+
+                                <p>Esse atributo define uma area clicavel em uma imagem, essa area clicavel é localizada atravez de coordenadas afim de definir os limites da area de clique, e ao definir essa area de clique em uma imagem, é possivel linkar essa area a uma outra pagina, imagem, etc.</p>
+
+                                <p>O atributo <code>usemap</code> interliga os elementos <code>img</code> e <code>map</code>, atraves do atributo <code>name</code> definido no elemento <code>map</code>.</p>
+
+                                <p>Veja um exemplo de uso:</p>
+
+                    <br>
+
+                    <textarea disabled cols="100" rows="22" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+
+    <img src="workplace.jpg"  usemap="#workmap" >
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMGTXBDJJT8Z" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
                             </li>
                         </ol>
 
