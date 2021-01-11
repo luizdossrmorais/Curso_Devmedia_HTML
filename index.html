@@ -3523,29 +3523,312 @@ conteudo da pagina.
                         <li><h3>Elementos</h3></li>
 
                         <ol>
-                            <li><code>table</code>. [usado para criar um tabela]
+                            <li><code>table</code>. [ usado para criar um tabela ]
+
+                                <p>O elemento <code>table</code> define uma tabela no HTML5.</p>
+
+                                <p>É o elemento pai de todos os elementos que complementam uma tabela.</p>
 
                             </li>
-                            <li><code>caption</code>. [legenda para tabela]
+
+                            <li><code>caption</code>. [ legenda para tabela ]
+
+                                <p>O elemento <code>caption</code> define uma legenda para a tabela.</p>
+
+                                <p>Deve ser inserida apos o elemento <code>table</code> ser aberto, e por padrão ela é posicionada no centro acima da tabela(pode mudar essas propriedades usando CSS).</p>
 
                             </li>
-                            <li><code>th</code>. [celulas de cabeçalho da tabela]
+
+                            <li><code>th</code>. [ celulas de cabeçalho da tabela ]
+
+                                <p>O elemento <code>th</code> define uma celula de cabeçalho alinhados no centro por padrão.</p>
+
+                                <ul>
+                                    <h4>Atributos:</h4>
+                                    <li>rowspan
+
+                                        <p>Usada para mesclar celulas de cima para baixo.</p>
+
+                                        <p>Deve estar dentro dos mesmos elementos semanticos, sejam <code>thead</code>, <code>tbody</code> ou <code>tfoot</code>.</p>
+
+                                    </li>
+
+                                    <li>colspan
+
+                                        <p>Usada para mesclar celulas da esquerda para direita.</p>
+
+                                        <p>Deve estar dentro dos mesmos elementos semanticos, sejam <code>thead</code>, <code>tbody</code> ou <code>tfoot</code>.</p>
+
+                                    </li>
+
+                                    <li>headers
+
+                                        <p>Define uma relação das celulas de dados com as celulas de cabeçalho.</p>
+
+                                        <p>Não tem efeito visual algum, mas pode ser lido pelos leitores de tela (acessibilidade).</p>
+
+                                    </li>
+
+                                    <li>abbr
+
+                                        <p>Define a versão mais curta em uma celula de cabeçalho.</p>
+
+                                        <p>Não tem efeito visual algum, mas pode ser lido pelos leitores de tela (acessibilidade).</p>
+
+                                    </li>
+
+                                    <li>scope
+
+                                        <p>Define se uma celula de cabeçalho é um cabeçalho da coluna, linhas ou grupo de colulas, para definir essas caracteristicas temos que especificar um dos valores abaixo:</p>
+
+                                            <ol type="I">
+                                                <li>col : é o cabeçalho de uma coluna.</li>
+
+                                                <li>row : é o cabeçalho de uma linha.</li>
+
+                                                <li>colgroup : é o cabeçalho para um grupo de colunas.</li>
+
+                                                <li>rowgroup : é o cabeçalho para um grupo de linhas.</li>
+                                            </ol>
+
+                                        <p>Não tem efeito visual algum, mas pode ser lido pelos leitores de tela (acessibilidade).</p>
+
+                                    </li>
+                                </ul>
 
                             </li>
-                            <li><code>tr</code>. [linhas da tabela]
+
+                            <li><code>tr</code>. [ linhas da tabela ]
+
+                                <p>O elemento <code>tr</code> define uma linha na tabela.</p>
 
                             </li>
-                            <li><code>td</code>. [celulas de dados da tabela]
+
+                            <li><code>td</code>. [ celulas de dados da tabela ]
+
+                                <p>O elemento <code>td</code> define uma celula de dados alinhados a esquerda por padrão.</p>
+                               
+
+                                <ul>
+                                    <h4>Atributos:</h4>
+                                    <li>rowspan
+
+                                        <p>Usada para mesclar uma celula de cima para baixo.</p>
+
+                                        <p>Deve estar dentro dos mesmos elementos semanticos, sejam <code>thead</code>, <code>tbody</code> ou <code>tfoot</code>.</p>
+
+                                    </li>
+
+                                    <li>colspan
+
+                                        <p>Usada para mesclar uma celula da esquerda para direita.</p>
+
+                                        <p>Deve estar dentro dos mesmos elementos semanticos, sejam <code>thead</code>, <code>tbody</code> ou <code>tfoot</code>.</p>
+
+                                    </li>
+
+                                    <li>headers
+
+                                        <p>Define uma relação das celulas de dados com as celulas de cabeçalho.</p>
+
+                                        <p>Não tem efeito visual algum, mas pode ser lido pelos leitores de tela (acessibilidade).</p>
+
+                                    </li>
+                                </ul>
 
                             </li>
-                            <li><code>thead</code>. [cabeçalho da tabela]
+
+                            <li><code>thead</code>. [ cabeçalho da tabela ]
+
+                                <p>O elemento <code>thead</code> é usado em conjunto com os elementos <code>tbody</code> e <code>tfoot</code>.</p>
+
+                                <p>O elemento <code>thead</code> define um significado semantico á uma tabela, o conteudo dentro dele caracteriza o cabeçalho da tabela.</p>
+
+                                <p>Essa definição semantica tambem é usada na impressão de um documento, caso uma tabela não caiba em uma folha, o serviço de impressão pode separar o conteudo do elemento <code>thead</code> em uma folha, consequentemente os elementos <code>tbody</code> e <code>tfoot</code> cada qual em uma folha.</p>
 
                             </li>
-                            <li><code>tbody</code>. [corpo da tabela]
+
+                            <li><code>tbody</code>. [ corpo da tabela ]
+
+                                <p>O elemento <code>tbody</code> é usado em conjunto com os elementos <code>thead</code> e <code>tfoot</code>.</p>
+
+                                <p>O elemento <code>tbody</code> define um significado semantico á uma tabela, o conteudo dentro dele caracteriza o corpo da tabela.</p>
+
+                                <p>Essa definição semantica tambem é usada na impressão de um documento, caso uma tabela não caiba em uma folha, o serviço de impressão pode separar o conteudo do elemento <code>tbody</code> em uma folha, consequentemente os elementos <code>thead</code> e <code>tfoot</code> cada qual em uma folha.</p>
 
                             </li>
-                            <li><code>tfoot</code>. [rodapé da tabela]
+
+                            <li><code>tfoot</code>. [ rodapé da tabela ]
+
+                                <p>O elemento <code>tfoot</code> é usado em conjunto com os elementos <code>thead</code> e <code>tbody</code>.</p>
+
+                                <p>O elemento <code>tfoot</code> define um significado semantico á uma tabela, o conteudo dentro dele caracteriza o rodape da tabela.</p>
+
+                                <p>Essa definição semantica tambem é usada na impressão de um documento, caso uma tabela não caiba em uma folha, o serviço de impressão pode separar o conteudo do elemento <code>tfoot</code> em uma folha, consequentemente os elementos <code>thead</code> e <code>tbody</code> cada qual em uma folha.</p>
+                            </li>
                         </ol>
+
+                        <p>Veja um exemplo de uso de todos os elementos filhos  de <code>table</code> abaixo:</p>
+
+                        <textarea disabled cols="100" rows="49" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+<table>
+    <thead title="cabeçalho">
+        <tr>
+            <th scope="col">titulo coluna 1</th>
+            <th scope="col">titulo coluna 2</th>
+            <th scope="col">titulo coluna 3</th>
+        </tr>
+    </thead>
+
+    <tbody title="corpo">
+        <tr>
+            <td>linha 2, celula a</td>
+            <td>linha 2, celula b</td>
+            <td>linha 2, celula c</td>
+        </tr>
+    </tbody>
+
+    <tfoot title="rodape">
+        <tr>
+            <td>linha 3, celula a</td>
+            <td>linha 3, celula b</td>
+            <td>linha 3, celula c</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMJO0JN7YFMY" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+                    
+                    <p>Veja um exemplo de uso do atributo <code>rowspan</code>(mesclar celulas de cima para baixo) no elemento <code>td</code>:</p>
+
+                        <textarea disabled cols="100" rows="45" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+<table>
+	<thead>
+        <tr>
+            <th scope="col">titulo coluna 1</th>
+            <th scope="col">titulo coluna 2</th>
+            <th scope="col">titulo coluna 3</th>
+        </tr>
+    </thead>
+	<tbody>
+        <tr>
+            <td>linha 2, celula a</td>
+            <td>linha 2, celula b</td>
+            <td rowspan="2">linha 2, celula c</td>
+        </tr>
+
+        <tr>
+            <td>linha 3, celula a</td>
+            <td>linha 3, celula b</td>
+            
+        </tr>
+    </tbody>
+</table>
+
+
+</body>                        
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMJO8TU5GSEY" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
+
+                    <p>Veja um exemplo de uso do atributo <code>colspan</code>(mesclar celulas da esquerda para direita) no elemento <code>td</code>:</p>
+
+                        <textarea disabled cols="100" rows="45" title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+
+<table>
+	<thead>
+        <tr>
+            <th scope="col">titulo coluna 1</th>
+            <th scope="col">titulo coluna 2</th>
+            <th scope="col">titulo coluna 3</th>
+        </tr>
+    </thead>
+	<tbody>
+        <tr>
+            <td>linha 2, celula a</td>
+            <td>linha 2, celula b</td>
+            <td>linha 2, celula c</td>
+        </tr>
+
+        <tr>
+            <td>linha 3, celula a</td>
+            <td colspan="2">linha 3, celula b</td>
+            
+        </tr>
+    </tbody>
+</table>
+
+
+</body>                       
+                
+
+                                        
+                    </textarea>
+
+                    
+                    <br>[veja o resultado <a href="https://www.w3schools.com/code/tryit.asp?filename=GMJO9YSISNBY" target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                    <br><br>
 
                     </ul>
 
