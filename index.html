@@ -1942,21 +1942,21 @@ conteudo da pagina.
                                     <textarea disabled cols="100" rows="25"
                                         title="Veja o resultado deste codigo fonte no link abaixo!">
         
-        <head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
-            <title></title>
-        </head>
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+    <title></title>
+</head>
         
-        <body><!-- CONTEUDO VISIVEL ao usuario-->
+<body><!-- CONTEUDO VISIVEL ao usuario-->
         
-            <figure> <!-- // uso do figure para imagens -->
+    <figure> <!-- // uso do figure para imagens -->
         
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" title="texto ao passar do mouse" alt="texto para acessibilidade" width="200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" title="texto ao passar do mouse" alt="texto para acessibilidade" width="200">
         
-                <figcaption>legenda da imagem</figcaption>
+        <figcaption>legenda da imagem</figcaption>
         
-            </figure>
+    </figure>
         
-        </body>
+</body>
                                                 
                             </textarea>
         
@@ -5347,8 +5347,8 @@ conteudo da pagina.
                             <li><code>label</code></li>
                             <li><code>input</code></li>
                             <li><code>datalist</code></li>
-                            <li><code>select</code></li>
                             <li><code>option</code></li>
+                            <li><code>select</code></li>
                             <li><code>optgroup</code></li>
                             <li><code>textarea</code></li>
                             <li><code>button</code></li>
@@ -5357,8 +5357,108 @@ conteudo da pagina.
                             <li><code>legend</code></li>
                         </ol>
 
+                        <p>Veja exemplo de uso de todos elementos abaixo:</p>
+        
+                        <textarea disabled cols="100" rows="84"
+                            title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+<title></title>
+</head>
+
+<body>
+
+    <!--  // Usamos os seguintes Elementos:   
+        
+                    - form : reserva um espaço para o formulario.
+                    - fieldset  : Organiza em bloco.
+                    - legend  : Legenda para o elemento [fieldset]
+                    - label  : titulo de um elemento no formulario.
+                    - input  : elemento que podemos transformar em campos 						  diversos no HTML5
+                    - datalist  : cria uma lista no elemento [input]
+                    - option  : cria uma lista de opções nos elementos [datalist 				   | select]
+                    - select  : cria uma lista de opções.
+                    - optgroup  : cria grupos dentro de uma lista no elemento 					  [select]
+                    - textarea  : cria uma caixa de texto.
+                    - button  : cria um botão.
+                    
+          -->
+    
+    <form action="/action_page.php">
+    
+    
+        <fieldset><legend>Elemento [ input | datalist | option ]</legend>
+        
+                <label>input</label>
+                <input>
+            <hr>
+                <label>input com lista [elemento: datalista]</label>
+                <input list="inputcomlista">
+                    <datalist id="inputcomlista">
+                        <option>item input 1</option>
+                        <option>item input 2</option>
+                    </datalist>
+                </input>
+        </fieldset>
+        
+        <fieldset><legend>Elemento [ select | optgroup | option ]</legend>
+        
+            <label>select</label>
+        
+            <select>
+                <optgroup label="lista com 2 itens">
+                    <option>item select 1</option>
+                    <option>Item select 2</option>
+                </optgroup>
+                
+                <optgroup label="lista com 1 item">
+                    <option>Item select 1</option>
+                </optgroup>
+            </select>
+            
+        </fieldset>
+        
+        <fieldset><legend>Elemento [ textarea ]</legend>
+        
+        <label>textarea</label>
+        
+            textarea /textarea
+        
+        </fieldset>
+        
+       
+        <fieldset><legend>button</legend>
+        
+            <label>button</label>
+            <button></button>
+            
+        </fieldset>
+        
+    </form>
+    
+    
+    </body>
+                                    
+                </textarea>
+
+
+                        <br>[veja o resultado <a
+                            href="https://www.w3schools.com/code/tryit.asp?filename=GM7LT2TVF33R"
+                            target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                        <br><br>
+
                         <ol>
-                            <li><h2><code>form  []</code></h2></li>
+                            <li><h2><code>form</code></h2>  
+
+
+                            <p>Elemento pai de todos os elementos de formulario no HTML5, ou seja, para criar um formulario no HTML5 é obrigatorio o uso do elemento <code>form</code>.</p>
+
+                            <p>Vejamos exemplos de uso do elemento <code>form</code>:</p>
+                            
+                                
+
+                            </li>
                             <li><h2><code>label  []</code></h2></li>
                             <li><h2><code>input  []</code></h2></li>
                             <li><h2><code>datalist  []</code></h2></li>
