@@ -5494,6 +5494,131 @@ conteudo da pagina.
                             target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                         <br><br>
+
+                        <ol type="I"><h3>Atributos:</h3>
+
+                            <li><code>action</code>
+                            
+                                <p>Nesse atributo escrevemos o link que vai receber os dados do formulario.</p>
+                            
+                            </li>
+                            <li><code>method</code>
+                            
+                                <p>Nesse atributo escrevemos como desejamos que os dados do formulario seja enviado, se pelo metodo <code>GET</code> ou <code>POST</code>.</p>
+
+                                <ul>
+                                    <li><code>GET</code> [ dados vão na URL ] 
+
+                                        <p>Existem alguns pontos que sçao importantes no funcionamento do metodo <code>GET</code>:</p>
+
+                                        <ul>
+                                            <li>Os dados vão dentro da URL em duplas de noomes e valores. </li>
+                                            <li>Uma URL so comporta 3000 caracteres.</li>
+                                            <li>Usar dados confidenciais como senhas usando o metodo <code>GET</code> é uma má ideia, porque os dados do metodo <code>GET</code> fica exposto na URL.</li>
+                                            <li>Use o metodo <code>GET</code> para todos os dados que não precisam de seguranã, como senhas, etc.</li>
+                                            <br>
+                                        </ul>
+                                    </li>
+
+                                    <li><code>POST</code> [ dados vão dentro do cabeçalho de requisição HTTP ]
+
+
+                                        <p>Existem alguns pontos que sçao importantes no funcionamento do metodo <code>POST</code>:</p>
+
+                                        <ul>
+                                            <li>Os dados são anexados dentro do cabeçalho de requisição HTTP (dados não são mostrados na URL)</li>
+                                            <li>Não tem limitações de caracteres.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            
+                            </li>
+                            <li><code>name</code>
+                            
+                                <p>Esse atributo é para nomear um formulario, esse nome vai servir para referenciar seu formulario em um script, e para referenciar os dados apos o envio do formulario.</p>
+                            
+                            </li>
+                            <li><code>target</code>
+                            
+                                <p>Com esse atributo escolhemos de que forma a resposta á uma requisição(envio do formulario) vai ser recebida, se na mesma aba do navegador, em outra aba, etc.</p>
+
+                                <p>Veja algumas opções de escolha:</p>
+
+                                <ul>
+                                    <li><code>_blank</code> : A resposta é recebida em uma nova janela ou aba do navegador.</li>
+
+                                    <li><code>_self</code> : a resposta é recebida na mesma pagina/aba.</li>
+
+                                    <li><code>_parent</code> : a resposta é exibida no quadro pai.</li>
+
+                                    <li><code>_top</code> : a resposta é exibida em todo o corpo da pagina.</li>
+                                    <br>
+                                </ul>
+                            
+                            </li>
+                            <li><code>autocomplete</code>
+                            
+                                <p>Esse atributos definimos se o formulario se autocompletará usando dados que o suario ja havia usado anteriormente, isso ajuda o usuario a não ficar digitando sempre a mesma informação.</p>
+                            
+                            </li>
+                            <li><code>enctype</code>
+                            
+                                <p>Somente usado junto com o atributo <code>method</code> com o valor <code>POST</code>.</p>
+                                
+                                <p>Esse atributo especifica se o formulario deve ser codificado ao ser enviado ao servidor.</p>
+
+                                <ul>Valores:
+                                    <li>application/x-www-form-urlencoded : Todos os caracteres são codificados antes do envio (os espaços são convertidos em símbolos "+" e os caracteres especiais são convertidos em valores ASCII HEX)</li>
+
+                                    <li>multipart/form-data : Nenhum caractere é codificado. Este valor é obrigatório quando você está usando formulários que têm um controle de upload de arquivo</li>
+
+                                    <li>text/plain : simples são convertidos em símbolos "+", mas nenhum caractere especial é codificado</li>
+                                    <br>
+                                </ul>
+                            
+                            </li>
+                            <li><code>novalidate</code>
+                            
+                                <p>Esse atributo é do tipo booleano, quando definido ele indica que os dados não serão validados no envio.</p>
+                            
+                            </li>
+                            <li><code>accept-charset</code>
+                            
+                                <p>Esse atributo define o tipo de caractere que será usado no formulario.</p>
+                            
+                            </li>
+
+                        </ol>
+
+                        <p>Vejamos um exemplo abaixo de uso dos atributos no elemento <code>form</code>:</p>
+
+                        <textarea disabled cols="100" rows="25"
+                            title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+<title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+        
+    <form > 
+        
+        Espaço reservado para um formulario ------------------[ linha inteira ]
+        
+    </form>
+    
+    
+</body>
+                                    
+                            </textarea>
+
+
+                        <br>[veja o resultado <a
+                            href="https://www.w3schools.com/code/tryit.asp?filename=GMQHLF82HNIC"
+                            target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                        <br><br>
                                 
 
                             </li>
