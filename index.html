@@ -5616,10 +5616,24 @@ conteudo da pagina.
 
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
+    <!--
+        Neste exemplo tem os atributos:
+        - action : link para envio do formulario.
+        - method : post, dados vão anexados no cabeçalho de requisição no HTTP, usei esse valor neste exemplo por causa do atributo[enctype].
+        - name : identifica o formulario apos o envio, e para referenciar se caso for usar um script.
+        - target : de que forma receberemos a resposta apos o envio do formulario, no exemplo usei o valor [_blank] que recebera a resposta em outra pagina ou aba do navegador.
+        - autocomplete: disponibiliza ao usuario usar dados que ja preencheu antes.
+        - enctype : somente usado junto com o atributo [method] no valor [POST], ele codifica os dados enviados do formulario.
+        - novalidade : para enviar o formulario e não validar os dados.
+        - accept-charset : defini que os caracteres usados neste formulario é o valor [UTF8].
+    -->
         
-    <form action="" method="" target="" autocomplete=""> 
+    <form action="/action_page.php" method="POST" name="formulario_teste" target="_blank" autocomplete enctype="application/x-www-form-urlencoded" novalidate accept-charset="UTF-8"> 
         
-        Espaço reservado para um formulario ------------------[ linha inteira ]
+        <label>Titulo do campo ao lado</label>
+        <input type="email" name="email" id="email" placeholder="digite seu email">
+
+        <button>enviar</button>
         
     </form>
     
@@ -5630,7 +5644,7 @@ conteudo da pagina.
 
 
                         <br>[veja o resultado <a
-                            href="https://www.w3schools.com/code/tryit.asp?filename=GMQHLF82HNIC"
+                            href="https://www.w3schools.com/code/tryit.asp?filename=GMRME4YT3KTX"
                             target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                         <br><br>
