@@ -5652,6 +5652,78 @@ conteudo da pagina.
 
                             </li>
                             <li><h2><code>label  []</code></h2>
+
+                                <p>Esse elemento de formulario define uma etiqueta/Rotulo para outros elementos de formulario no HTML5.</p>
+
+                                <p>Existem beneficios suficientes para fazer uso do elemento <code>label</code> no formulario, e são:</p>
+
+                                <ul>
+                                    <li>Usuarios que usam o leitor de tela(navegadores com acessibilidade), e a leitura será feita em voz alta caso o usuarioestiver focado nesse elemento <code>label</code>.</li>
+
+                                    <li>Aumenta a area de clique em casos de elementos do tipo <code>checkbox</code>, facilitando a vida dos usuarios mobile e pc.</li>
+                                </ul>
+
+                                <p>Para fazer o uso adequado do elemento <code>label</code>, é necessario usar os atributos <code>for</code> e <code>form</code> criando uma relação entre <code>label</code> (rotulo/etiqueta) e outros elementos de formulario.</p>
+
+                                <ol type="I"><h3>Atributos:</h3>
+                                    <li><code>for</code></li>
+                                    <li><code>form</code></li>
+                                </ol>
+
+                                <br>
+
+                                <ol type="I">
+                                    <li><code>for</code>
+                                    
+                                        <p>Esse atributo relaciona o <code>label</code>(rotulo/etiqueta) com os elementos filhos do elemento <code>form</code>. </p>
+
+                                        <p>Devemos colocar em seu valor o mesmo definido no <code>id</code> dos elementos filhos do elemento <code>form</code>.</p>
+
+                                        <p>Esse atributo não pode ser usado fora do elemento <code>form</code>.</p>
+
+                                        <p>Vejamos um exemplo de uso abaixo:</p>
+
+                                        <textarea disabled cols="100" rows="35"
+                            title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+<title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+        
+        <!-- // Os atributos for usados no elemento label estão dentro do 				elemento form.
+        -->
+        
+    <form> 
+        
+        <label>Titulo do campo ao lado</label>
+        <input type="checkbox" name="a" id="a">
+<br><br><br>
+        <label for="a">[Opção 1] - Clique aqui para ticar o checkbox acima</label>
+<br><br><br>
+
+        <label for="a">[Opção 2] - Clique aqui para ticar o checkbox acima</label>
+
+    </form>
+    
+    
+</body>
+                                    
+                            </textarea>
+
+
+                        <br>[veja o resultado <a
+                            href="https://www.w3schools.com/code/tryit.asp?filename=GMW93PUHK4PQ"
+                            target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                        <br><br>
+
+                                    </li>
+                                    <li><code>form</code></li>
+                                </ol>
+
                             </li>
                             <li><h2><code>input  []</code></h2>
                             </li>
