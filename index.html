@@ -5746,7 +5746,13 @@ conteudo da pagina.
 <body><!-- CONTEUDO VISIVEL ao usuario-->
 
         
-        <!-- // Os atributos form usados no elemento label estão fora do 				elemento form.
+        <!-- // Os atributos form usados no elemento label estão fora do elemento form.
+
+                Como acontece a sequencia que relaciona um label:
+
+                1º [Atributo: form] ele relaciona atraves do id do elemento form, para localizar primeiro o elemento pai(form)
+
+                2º [Atributo: for] ele relaciona atraves do id do elemento filho de form(ex. input, textarea, etc), para localizar qual elemento filho de form vai ser relacionado o label(rotulo/etiqueta).
         -->
         
     <form id="a"> 
@@ -5766,7 +5772,7 @@ conteudo da pagina.
 
     <hr> Fora de form!
     <br>
-    <label for="b"  form="a">[Opção 2] - Clique aqui para ticar o checkbox que esta dentro de form!</label> 
+    <label form="a" for="b" >[Opção 2] - Clique aqui para ticar o checkbox que esta dentro de form!</label> 
     
 </body>
                                     
@@ -5774,7 +5780,7 @@ conteudo da pagina.
 
 
                         <br>[veja o resultado <a
-                            href="https://www.w3schools.com/code/tryit.asp?filename=GMW05PS1NQNP"
+                            href="https://www.w3schools.com/code/tryit.asp?filename=GMWSP24EWDPS"
                             target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
 
                         <br><br>
