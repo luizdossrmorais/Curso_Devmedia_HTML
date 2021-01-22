@@ -5721,7 +5721,62 @@ conteudo da pagina.
                         <br><br>
 
                                     </li>
-                                    <li><code>form</code></li>
+                                    <li><code>form</code>
+
+                                        <p>Esse atributo é usado quando o <code>label</code> esta codado fora do elemento <code>form</code>.</p>
+                                    
+                                        <p>Esse atributo relaciona o <code>label</code>(rotulo/etiqueta) com o elemento <code>form</code>afim de relacionar usando o atributo <code>for</code> os filhos do elemento <code>form</code>. </p>
+
+                                        <p>Devemos colocar em seu valor o mesmo definido no <code>id</code> do elemento <code>form</code>.</p>
+
+                                        <p>Esse atributo é usado para relacionar um <code>label</code> fora do elemento <code>form</code>.</p>
+
+                                        <p>Vejamos um exemplo de uso abaixo:</p>
+
+                                        <textarea disabled cols="100" rows="35"
+                            title="Veja o resultado deste codigo fonte no link abaixo!">
+
+<head><!-- CONTEUDO NÃO VISIVEL ao usuario-->
+<title></title>
+</head>
+
+<body><!-- CONTEUDO VISIVEL ao usuario-->
+
+        
+        <!-- // Os atributos form usados no elemento label estão fora do 				elemento form.
+        -->
+        
+    <form id="a"> 
+        
+        <label>Titulo do campo ao lado</label>
+        <input type="checkbox" name="b" id="b">
+
+<br><br><br>
+
+        <label for="b">[Opção 1] - Clique aqui para ticar o checkbox acima</label>
+
+<br><br><br>
+
+        <label for="b">[Opção 2] - Clique aqui para ticar o checkbox acima</label>
+
+    </form>
+
+    <hr> Fora de form!
+    <br>
+    <label for="b"  form="a">[Opção 2] - Clique aqui para ticar o checkbox que esta dentro de form!</label> 
+    
+</body>
+                                    
+                            </textarea>
+
+
+                        <br>[veja o resultado <a
+                            href="https://www.w3schools.com/code/tryit.asp?filename=GMW05PS1NQNP"
+                            target="_blank">aqui</a> - Obs* na pagina que abre, clique no botão azul: run]<br>
+
+                        <br><br>
+                                    
+                                    </li>
                                 </ol>
 
                             </li>
