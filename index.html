@@ -5666,8 +5666,11 @@ conteudo da pagina.
                                 <p>Para fazer o uso adequado do elemento <code>label</code>, é necessario usar os atributos <code>for</code> e <code>form</code> criando uma relação entre <code>label</code> (rotulo/etiqueta) com outros elementos de formulario.</p>
 
                                 <ol type="I"><h3>Atributos:</h3>
-                                    <li><code>for</code></li>
-                                    <li><code>form</code></li>
+                                    <li><code>for</code> : no valor colocamos o mesmo id dos elementos filhos de form (ex, input, textarea, button, etc), e esse atributo <code>for</code>relaciona o <code>label</code>(rotulo/etiqueta) com os filhos que estão dentro do elemento <code>form</code>.</li>
+
+                                    <br>
+
+                                    <li><code>form</code> : no valor colocamos o mesmo id do elemento <code>form</code>, e esse atributo <code>form</code>relaciona o <code>label</code>(rotulo/etiqueta) com o elemento <code>form</code>.</li>
                                 </ol>
 
                                 <br>
@@ -5725,7 +5728,7 @@ conteudo da pagina.
 
                                         <p>Esse atributo é usado quando o <code>label</code> esta codado fora do elemento <code>form</code>.</p>
                                     
-                                        <p>Esse atributo relaciona o <code>label</code>(rotulo/etiqueta) com o elemento <code>form</code>afim de relacionar usando o atributo <code>for</code> os filhos do elemento <code>form</code>. </p>
+                                        <p>Esse atributo relaciona o <code>label</code>(rotulo/etiqueta) que esta fora do elemento <code>form</code> exclusivamente com o elemento <code>form</code>.</p>
 
                                         <p>Devemos colocar em seu valor o mesmo definido no <code>id</code> do elemento <code>form</code>.</p>
 
